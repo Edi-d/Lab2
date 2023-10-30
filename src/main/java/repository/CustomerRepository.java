@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomerRepository implements Repository<Customer> {
-    private List<Customer> customers;
+    private List <Customer> customers;
 
     public CustomerRepository() {
         this.customers = new ArrayList<>();

@@ -15,4 +15,10 @@ public class Customer extends User{
     public void setcustomerId(int customerId) {
         this.customerId = customerId;
     }
+    @Override
+    public String toString() {
+        return "Customer ID: " + customerId + "\n" +
+                "Name: " + getFirstName() + " " + getLastName() + "\n" +
+                "Age: " + getAge();
+    }
 }
