@@ -5,17 +5,22 @@ import java.util.List;
 public class BookingRepository implements Repository<Booking> {
     private List<Booking> bookingList = new ArrayList<>();
     @Override
-    public void save(Booking entity) {
-        bookingList.add(entity);
-    }
-    @Override
-    public void remove(Booking entity) {
+    public void create(Booking entity) {
 
-        bookingList.remove(entity);
     }
+
+    @Override
+    public void update(Booking entity) {
+
+    }
+
+    @Override
+    public void delete(Booking entity) {
+
+    }
+
     @Override
     public List<Booking> getAll() {
-
-        return bookingList;
+        return null;
     }
 }

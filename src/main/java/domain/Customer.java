@@ -1,18 +1,18 @@
 package domain;
 
 public class Customer extends User{
-    private int userId;
+    private int customerId;
 
-    public Customer(String firstName, String lastName, int age, int userId) {
+    public Customer(String firstName, String lastName, int age, int customerId) {
         super(firstName, lastName, age);
-        this.userId = userId;
+        this.customerId = customerId;
     }
 
-    public int getUserId() {
-        return userId;
+    public int getcustomerId() {
+        return customerId;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setcustomerId(int customerId) {
+        this.customerId = customerId;
     }
 }
