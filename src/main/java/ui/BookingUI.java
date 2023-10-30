@@ -4,12 +4,12 @@ import domain.Customer;
 
 import java.util.Scanner;
 
-public class CustomerUI {
-    private Controller customerController;
+public class BookingUI {
+    private Controller bookingController;
     private Scanner scanner;
 
-    public CustomerUI(Controller customerController) {
-        this.customerController = customerController;
+    public BookingUI(Controller customerController) {
+        this.bookingController = customerController;
         this.scanner = new Scanner(System.in);
     }
 
@@ -22,13 +22,13 @@ public class CustomerUI {
 
             switch (option) {
                 case 1:
-                    addCustomer();
+                    addBooking();
                     break;
                 case 2:
-                    removeCustomer();
+                    removeBooking();
                     break;
                 case 3:
-                    viewAllCustomers();
+                    viewAllBookings();
                     break;
                 case 0:
                     exit = true;
@@ -42,13 +42,13 @@ public class CustomerUI {
 
     private void printMenu() {
         System.out.println("Select an option:");
-        System.out.println("1. Add a customer");
-        System.out.println("2. Remove a customer");
-        System.out.println("3. View all customers");
+        System.out.println("1. Add a booking");
+        System.out.println("2. Remove a booking");
+        System.out.println("3. View all bookings");
         System.out.println("0. Exit");
     }
 
-    private void addCustomer() {
+    private void addBooking() {
         System.out.println("Enter customer details:");
         System.out.print("First Name: ");
         String firstName = scanner.nextLine();
@@ -63,14 +63,14 @@ public class CustomerUI {
         System.out.println("Customer added successfully!");
     }
 
-    private void removeCustomer() {
+    private void removeBooking() {
         System.out.print("Enter customer ID to remove: ");
         int customerId = scanner.nextInt();
         customerController.remove(customerId);
         System.out.println("Customer removed successfully!");
     }
 
-    private void viewAllCustomers() {
+    private void viewAllBookings() {
         Iterable<Customer> customers = customerController.getAll();
         System.out.println("List of customers:");
         for (Customer customer : customers) {

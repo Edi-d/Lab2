@@ -1,7 +1,6 @@
 package controller;
 import java.util.ArrayList;
 import domain.Customer;
-import repository.CustomerRepository;
 import repository.Repository;
 
 import java.util.List;

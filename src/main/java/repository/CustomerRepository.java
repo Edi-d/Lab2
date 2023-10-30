@@ -19,7 +19,6 @@ public class CustomerRepository implements Repository<Customer> {
 
     @Override
     public void update(Customer entity) {
-        // Implement update logic based on your requirements
     }
 
     @Override
