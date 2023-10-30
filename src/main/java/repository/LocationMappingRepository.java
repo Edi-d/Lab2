@@ -13,7 +13,7 @@ public class LocationMappingRepository implements Repository<LocationMapping>{
     }
 
     @Override
-    public void create(LocationMapping entity) {
+    public void add(LocationMapping entity) {
         location.add(entity);
     }
 

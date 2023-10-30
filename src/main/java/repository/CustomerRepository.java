@@ -13,7 +13,7 @@ public class CustomerRepository implements Repository<Customer> {
     }
 
     @Override
-    public void create(Customer entity) {
+    public void add(Customer entity) {
         customers.add(entity);
     }
 

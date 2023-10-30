@@ -13,7 +13,7 @@ public class CustomerController {
     }
 
     public void createCustomer(Customer customer) {
-        customerRepository.create(customer);
+        customerRepository.add(customer);
     }
 
     public void updateCustomer(Customer customer) {
@@ -24,7 +24,7 @@ public class CustomerController {
         List<Customer> customers = customerRepository.getAll();
         List<Customer> customersToRemove = new ArrayList<>();
         for (Customer Customer : customers) {
-            if (Customer.getcustomerId() == CustomerId) {
+            if (Customer.getId() == CustomerId) {
                 customersToRemove.add(Customer);
             }
         }

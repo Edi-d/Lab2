@@ -13,7 +13,7 @@ public class GuideRepository implements Repository<Guide>{
     }
 
     @Override
-    public void create(Guide entity) {
+    public void add(Guide entity) {
         guides.add(entity);
     }
 

@@ -13,7 +13,7 @@ public class PaymentRepository implements Repository<Payment>{
     }
 
     @Override
-    public void create(Payment entity) {
+    public void add(Payment entity) {
         payments.add(entity);
     }
 

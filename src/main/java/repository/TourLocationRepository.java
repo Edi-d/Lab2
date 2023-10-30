@@ -13,7 +13,7 @@ public class TourLocationRepository implements Repository<TourLocation>{
     }
 
     @Override
-    public void create(TourLocation entity) {
+    public void add(TourLocation entity) {
         tourLocation.add(entity);
     }
 

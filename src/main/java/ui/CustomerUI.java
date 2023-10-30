@@ -59,7 +59,7 @@ public class CustomerUI {
         System.out.print("CustomerId: ");
         int customerId = scanner.nextInt();
         Customer newCustomer = new Customer(firstName, lastName, age, customerId);
-        customerController.create(newCustomer);
+        customerController.add(newCustomer);
         System.out.println("Customer added successfully!");
     }
 

@@ -8,11 +8,11 @@ public class Customer extends User{
         this.customerId = customerId;
     }
 
-    public int getcustomerId() {
+    public int getId() {
         return customerId;
     }
 
-    public void setcustomerId(int customerId) {
+    public void setId(int customerId) {
         this.customerId = customerId;
     }
     @Override

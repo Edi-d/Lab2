@@ -13,7 +13,7 @@ public class ReviewRepository implements Repository <Review>{
     }
 
     @Override
-    public void create(Review entity) {
+    public void add(Review entity) {
         reviews.add(entity);
     }
 

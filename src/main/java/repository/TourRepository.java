@@ -14,7 +14,7 @@ public class TourRepository implements Repository<Tour>{
     }
 
     @Override
-    public void create(Tour entity) {
+    public void add(Tour entity) {
         tour.add(entity);
     }
 

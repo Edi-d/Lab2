@@ -3,11 +3,11 @@ package domain;
 public class Guide extends User{
     private int guideId;
 
-    public int getGuideId() {
+    public int getId() {
         return guideId;
     }
 
-    public void setGuideId(int guideId) {
+    public void setiId(int guideId) {
         this.guideId = guideId;
     }
 

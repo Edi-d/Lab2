@@ -1,26 +1,26 @@
 package domain;
 
 public class Booking {
-    private int bookingId;
+    private int Id;
     private Guide guide;
     private Tour tour;
     private Payment payment;
     private String dateTime;
 
-    public Booking(int bookingId, Guide guide, Tour tour, Payment payment, String dateTime) {
-        this.bookingId = bookingId;
+    public Booking(int Id, Guide guide, Tour tour, Payment payment, String dateTime) {
+        this.Id = Id;
         this.guide = guide;
         this.tour = tour;
         this.payment = payment;
         this.dateTime = dateTime;
     }
 
-    public int getBookingId() {
-        return bookingId;
+    public int getId() {
+        return Id;
     }
 
-    public void setBookingId(int bookingId) {
-        this.bookingId = bookingId;
+    public void setId(int id) {
+        this.Id = id;
     }
 
     public Guide getGuide() {

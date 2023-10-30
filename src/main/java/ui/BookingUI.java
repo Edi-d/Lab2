@@ -1,6 +1,7 @@
 package ui;
 import controller.Controller;
-import domain.Customer;
+import domain.Booking;
+
 
 import java.util.Scanner;
 
@@ -49,32 +50,38 @@ public class BookingUI {
     }
 
     private void addBooking() {
-        System.out.println("Enter customer details:");
-        System.out.print("First Name: ");
-        String firstName = scanner.nextLine();
-        System.out.print("Last Name: ");
-        String lastName = scanner.nextLine();
-        System.out.print("Age: ");
-        int age = scanner.nextInt();
-        System.out.print("CustomerId: ");
-        int customerId = scanner.nextInt();
-        Customer newCustomer = new Customer(firstName, lastName, age, customerId);
-        customerController.create(newCustomer);
-        System.out.println("Customer added successfully!");
+        System.out.println("Enter booking details:");
+        System.out.print("Booking ID: ");
+        int bookingId = scanner.nextInt();
+        scanner.nextLine(); // Consume the newline character left by nextInt()
+
+//        this.bookingId = bookingId;
+//        this.guide = guide;
+//        this.tour = tour;
+//        this.payment = payment;
+//        this.dateTime = dateTime;
+
+        // Create Booking object
+//        Booking newBooking = new Booking(bookingId, /* guide */, /* tour */, /* payment */, /* dateTime */);
+
+//        bookingController.add(newBooking);
+        System.out.println("Booking added successfully!");
     }
 
     private void removeBooking() {
-        System.out.print("Enter customer ID to remove: ");
-        int customerId = scanner.nextInt();
-        customerController.remove(customerId);
-        System.out.println("Customer removed successfully!");
+        System.out.print("Enter booking ID to remove: ");
+        int bookingIdToRemove = scanner.nextInt();
+        scanner.nextLine(); // Consume the newline character left by nextInt()
+
+        bookingController.remove(bookingIdToRemove);
+        System.out.println("Booking removed successfully!");
     }
 
     private void viewAllBookings() {
-        Iterable<Customer> customers = customerController.getAll();
-        System.out.println("List of customers:");
-        for (Customer customer : customers) {
-            System.out.println(customer.toString());
+        Iterable<Booking> bookings = bookingController.getAll();
+        System.out.println("List of bookings:");
+        for (Booking booking : bookings) {
+            System.out.println(booking.toString());
         }
     }
 }

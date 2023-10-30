@@ -1,6 +1,5 @@
 package repository;
 import domain.Booking;
-import domain.Guide;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,11 +7,11 @@ public class BookingRepository implements Repository<Booking> {
     private List<Booking> booking;
 
     public BookingRepository() {
-        this.booking = booking;
+        this.booking = new ArrayList<>();
     }
 
     @Override
-    public void create(Booking entity) {
+    public void add(Booking entity) {
         booking.add(entity);
     }
 
