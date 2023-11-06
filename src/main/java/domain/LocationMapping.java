@@ -1,22 +1,18 @@
 package domain;
 
-public class LocationMapping {
-    private int locationId;
+public class LocationMapping implements Identifiable {
+    private int Id;
     private String name;
     private String description;
 
     public LocationMapping(int locationId, String name, String description) {
-        this.locationId = locationId;
+        this.Id = locationId;
         this.name = name;
         this.description = description;
     }
 
-    public int getLocationId() {
-        return locationId;
-    }
-
-    public void setLocationId(int locationId) {
-        this.locationId = locationId;
+    public void setId(int locationId) {
+        this.Id = locationId;
     }
 
     public String getName() {
@@ -33,5 +29,10 @@ public class LocationMapping {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @Override
+    public int getId() {
+        return Id;
     }
 }

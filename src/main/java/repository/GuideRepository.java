@@ -22,8 +22,8 @@ public class GuideRepository implements Repository<Guide>{
     }
 
     @Override
-    public void delete(Guide entity) {
-        guides.remove(entity);
+    public void deleteById(int id) {
+        guides.removeIf(guides -> guides.getId() == id);
     }
 
     @Override

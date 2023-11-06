@@ -23,8 +23,8 @@ public class LocationMappingRepository implements Repository<LocationMapping>{
     }
 
     @Override
-    public void delete(LocationMapping entity) {
-        location.remove(entity);
+    public void deleteById(int id) {
+        location.removeIf(locationMapping -> locationMapping.getId() == id);
     }
 
     @Override

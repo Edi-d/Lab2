@@ -1,6 +1,7 @@
 package domain;
 
-public class CustomerBooking {
+public class CustomerBooking implements Identifiable{
+    private int Id;
     private Customer customer;
     private Booking booking;
 
@@ -23,5 +24,10 @@ public class CustomerBooking {
 
     public void setBooking(Booking bookingId) {
         this.booking = booking;
+    }
+
+    @Override
+    public int getId() {
+        return Id;
     }
 }

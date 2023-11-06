@@ -1,14 +1,14 @@
 package domain;
 
 public class Guide extends User{
-    private int guideId;
+    private int Id;
 
     public int getId() {
-        return guideId;
+        return Id;
     }
 
-    public void setiId(int guideId) {
-        this.guideId = guideId;
+    public void setId(int guideId) {
+        this.Id = guideId;
     }
 
     public Guide(String firstName, String lastName, int age) {

@@ -1,22 +1,22 @@
 package domain;
 
 public class Tour {
-    private int tourId;
+    private int Id;
     private String name;
     private String description;
 
-    public Tour(int tourId, String name, String description) {
-        this.tourId = tourId;
+    public Tour(int Id, String name, String description) {
+        this.Id = Id;
         this.name = name;
         this.description = description;
     }
 
-    public int getTourId() {
-        return tourId;
+    public int getId() {
+        return Id;
     }
 
-    public void setTourId(int tourId) {
-        this.tourId = tourId;
+    public void setId(int tourId) {
+        this.Id = tourId;
     }
 
     public String getName() {

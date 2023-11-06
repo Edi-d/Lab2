@@ -22,8 +22,8 @@ public class PaymentRepository implements Repository<Payment>{
     }
 
     @Override
-    public void delete(Payment entity) {
-        payments.remove(entity);
+    public void deleteById(int id) {
+        payments.removeIf(payments -> payments.getId() == id);
     }
 
     @Override

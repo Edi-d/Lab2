@@ -20,8 +20,8 @@ public class BookingRepository implements Repository<Booking> {
     }
 
     @Override
-    public void delete(Booking entity) {
-        booking.remove(entity);
+    public void deleteById(int id) {
+        booking.removeIf(booking -> booking.getId() == id);
     }
 
     @Override

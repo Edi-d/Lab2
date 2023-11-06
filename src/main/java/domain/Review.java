@@ -1,25 +1,25 @@
 package domain;
 
 public class Review {
-    private int reviewId;
+    private int Id;
     private Customer customer;
     private Tour tour;
     private int rating;
     private String comment;
     public Review(int reviewId, Customer customer, Tour tour, int rating, String comment){
-        this.reviewId = reviewId;
+        this.Id = reviewId;
         this.customer = customer;
         this.tour = tour;
         this.rating = rating;
         this.comment = comment;
     }
 
-    public int getReviewId() {
-        return reviewId;
+    public int getId() {
+        return Id;
     }
 
-    public void setReviewId(int reviewId) {
-        this.reviewId = reviewId;
+    public void setId(int reviewId) {
+        this.Id = reviewId;
     }
 
     public Customer getCustomerId() {

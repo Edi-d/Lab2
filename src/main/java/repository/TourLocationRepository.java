@@ -22,8 +22,8 @@ public class TourLocationRepository implements Repository<TourLocation>{
     }
 
     @Override
-    public void delete(TourLocation entity) {
-        tourLocation.remove(entity);
+    public void deleteById(int id) {
+        tourLocation.removeIf(tourLocation -> tourLocation.getId() == id);
     }
 
     @Override

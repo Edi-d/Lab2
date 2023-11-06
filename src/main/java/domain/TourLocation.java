@@ -1,6 +1,7 @@
 package domain;
 
-public class TourLocation {
+public class TourLocation implements Identifiable {
+    private int Id;
     private Tour tour;
     private LocationMapping location;
     private int Order;
@@ -33,5 +34,10 @@ public class TourLocation {
         this.tour = tour;
         this.location = location;
         Order = order;
+    }
+
+    @Override
+    public int getId() {
+        return Id;
     }
 }

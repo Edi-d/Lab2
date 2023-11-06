@@ -22,8 +22,8 @@ public class CustomerRepository implements Repository<Customer> {
     }
 
     @Override
-    public void delete(Customer entity) {
-        customers.remove(entity);
+    public void deleteById(int id) {
+        customers.removeIf(customers -> customers.getId() == id);
     }
 
     @Override

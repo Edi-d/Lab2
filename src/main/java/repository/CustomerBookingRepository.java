@@ -22,6 +22,11 @@ public class CustomerBookingRepository implements Repository<CustomerBooking> {
 
     }
 
+    @Override
+    public void deleteById(int id) {
+        customerBookings.removeIf(customerBookings -> customerBookings.getId() == id);
+    }
+
 //    public void updateCustomerBooking(int customerId, Booking booking) {
 //        for (CustomerBooking customerBooking : customerBookings) {
 //            if (customerBooking.getCustomer().getUserId() == customerId) {
@@ -31,10 +36,6 @@ public class CustomerBookingRepository implements Repository<CustomerBooking> {
 //        }
 //    }
 
-    @Override
-    public void delete(CustomerBooking entity) {
-        customerBookings.remove(entity);
-    }
 
     @Override
     public List<CustomerBooking> getAll() {

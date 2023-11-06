@@ -22,8 +22,8 @@ public class ReviewRepository implements Repository <Review>{
     }
 
     @Override
-    public void delete(Review entity) {
-        reviews.remove(entity);
+    public void deleteById(int id) {
+        reviews.removeIf(reviews -> reviews.getId() == id);
     }
 
     @Override

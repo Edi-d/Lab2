@@ -1,22 +1,22 @@
 package domain;
 
 public class Payment {
-    private int paymentId;
+    private int Id;
     private int price;
     private String method;
 
     public Payment(int paymentId, int price, String method) {
-        this.paymentId = paymentId;
+        this.Id = paymentId;
         this.price = price;
         this.method = method;
     }
 
-    public int getPaymentId() {
-        return paymentId;
+    public int getId() {
+        return Id;
     }
 
-    public void setPaymentId(int paymentId) {
-        this.paymentId = paymentId;
+    public void setId(int paymentId) {
+        this.Id = paymentId;
     }
 
     public int getPrice() {
