@@ -5,7 +5,8 @@ public class CustomerBooking implements Identifiable{
     private Customer customer;
     private Booking booking;
 
-    public CustomerBooking(Customer customer, Booking booking) {
+    public CustomerBooking(int Id, Customer customer, Booking booking) {
+        this.Id = Id;
         this.customer = customer;
         this.booking = booking;
     }

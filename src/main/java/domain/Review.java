@@ -1,6 +1,6 @@
 package domain;
 
-public class Review {
+public class Review implements Identifiable{
     private int Id;
     private Customer customer;
     private Tour tour;

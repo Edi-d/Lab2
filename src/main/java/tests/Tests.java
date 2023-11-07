@@ -3,10 +3,11 @@ package tests;
 import controller.Controller;
 import domain.*;
 import repository.BookingRepository;
-import repository.Repository;
+
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import repository.Repository;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -23,7 +24,7 @@ public class Tests {
 
     @Test
     void saveBookingTest() {
-        Guide guide = new Guide("Daniel", "Petrascu", 21);
+        Guide guide = new Guide(1, "Daniel", "Petrascu", 21);
         Tour tour = new Tour(1, "Hidden Wonders of CLuj-Napoca", "The best tour in the city");
         Payment payment =  new Payment(1, 100, "Paypal");
         Booking booking = new Booking(1, guide, tour, payment, "2023-10-01");
@@ -37,7 +38,7 @@ public class Tests {
 
     @Test
     void saveBookingsTest() {
-        Guide guide = new Guide("Daniel", "Petrascu", 21);
+        Guide guide = new Guide(1, "Daniel", "Petrascu", 21);
         Tour tour = new Tour(1, "Hidden Wonders of CLuj-Napoca", "The best tour in the city");
         Payment payment =  new Payment(1, 100, "Paypal");
 
@@ -55,7 +56,7 @@ public class Tests {
 
     @Test
     void removeBookingTest() {
-        Guide guide = new Guide("Daniel", "Petrascu", 21);
+        Guide guide = new Guide(1, "Daniel", "Petrascu", 21);
         Tour tour = new Tour(1, "Hidden Wonders of CLuj-Napoca", "The best tour in the city");
         Payment payment =  new Payment(1, 100, "Paypal");
 

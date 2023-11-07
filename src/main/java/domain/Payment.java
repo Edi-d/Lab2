@@ -1,6 +1,6 @@
 package domain;
 
-public class Payment {
+public class Payment implements Identifiable {
     private int Id;
     private int price;
     private String method;

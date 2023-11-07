@@ -30,7 +30,8 @@ public class TourLocation implements Identifiable {
         Order = order;
     }
 
-    public TourLocation(Tour tour, LocationMapping location, int order) {
+    public TourLocation(int Id, Tour tour, LocationMapping location, int order) {
+        this.Id = Id;
         this.tour = tour;
         this.location = location;
         Order = order;

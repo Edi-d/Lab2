@@ -2,11 +2,10 @@ package controller;
 import domain.Identifiable;
 import repository.Repository;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class Controller<ObjectType> {
-    private  Repository<ObjectType> repository;
+public class Controller<ObjectType extends Identifiable> {
+    private Repository<ObjectType> repository;
 
     public Controller(Repository<ObjectType> repository) {
         this.repository = repository;
@@ -16,8 +15,8 @@ public class Controller<ObjectType> {
         repository.add(entity);
     }
 
-    public void update(ObjectType entity) {
-        repository.update(entity);
+    public void update(ObjectType entity, ObjectType newEntity) {
+        repository.update(entity, newEntity);
     }
 
     public void remove(int id) {

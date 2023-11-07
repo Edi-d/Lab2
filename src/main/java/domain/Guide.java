@@ -11,7 +11,7 @@ public class Guide extends User{
         this.Id = guideId;
     }
 
-    public Guide(String firstName, String lastName, int age) {
-        super(firstName, lastName, age);
+    public Guide(int Id, String firstName, String lastName, int age) {
+        super(Id, firstName, lastName, age);
     }
 }

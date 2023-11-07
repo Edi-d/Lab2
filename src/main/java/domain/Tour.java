@@ -1,6 +1,6 @@
 package domain;
 
-public class Tour {
+public class Tour implements Identifiable {
     private int Id;
     private String name;
     private String description;

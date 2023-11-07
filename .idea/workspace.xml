@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2d2096e-1618-4231-acfa-7e22e282eb16" name="Changes" comment="Completion of Repository // Start on UI">
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Identifiable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Guide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Guide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/BookingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/CustomerBookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/CustomerBookingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/GuideRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/GuideRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/LocationMappingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/LocationMappingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/PaymentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/PaymentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ReviewRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TourLocationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TourLocationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TourRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TourRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/CustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/BookingUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/BookingUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/CustomerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/CustomerUI.java" afterDir="false" />
-    </list>
+    <list default="true" id="e2d2096e-1618-4231-acfa-7e22e282eb16" name="Changes" comment="Added getById method and restructured project&#10;--- Fixing tests ----&#10;--- Implemeting update method ---" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698668014827</updated>
-      <workItem from="1698668015868" duration="24114000" />
+      <workItem from="1698668015868" duration="37527000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation">
       <option name="closed" value="true" />
@@ -126,7 +104,23 @@
       <option name="project" value="LOCAL" />
       <updated>1698686331089</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tried to implement Identifiable Interface class --- &gt; didn't work&#10;implemented tests&#10;Debugging">
+      <option name="closed" value="true" />
+      <created>1698700453908</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698700453908</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added getById method and restructured project&#10;--- Fixing tests ----&#10;--- Implemeting update method ---">
+      <option name="closed" value="true" />
+      <created>1699288937735</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699288937735</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +140,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implementation" />
     <MESSAGE value="Completion of Repository // Start on UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completion of Repository // Start on UI" />
+    <MESSAGE value="Tried to implement Identifiable Interface class --- &gt; didn't work&#10;implemented tests&#10;Debugging" />
+    <MESSAGE value="Added getById method and restructured project&#10;--- Fixing tests ----&#10;--- Implemeting update method ---" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added getById method and restructured project&#10;--- Fixing tests ----&#10;--- Implemeting update method ---" />
   </component>
 </project>

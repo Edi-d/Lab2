@@ -5,40 +5,5 @@ import domain.CustomerBooking;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomerBookingRepository implements Repository<CustomerBooking> {
-    private List<CustomerBooking> customerBookings;
-
-    public CustomerBookingRepository() {
-        this.customerBookings = new ArrayList<>();
-    }
-
-    @Override
-    public void add(CustomerBooking entity) {
-        customerBookings.add(entity);
-    }
-
-    @Override
-    public void update(CustomerBooking entity) {
-
-    }
-
-    @Override
-    public void deleteById(int id) {
-        customerBookings.removeIf(customerBookings -> customerBookings.getId() == id);
-    }
-
-//    public void updateCustomerBooking(int customerId, Booking booking) {
-//        for (CustomerBooking customerBooking : customerBookings) {
-//            if (customerBooking.getCustomer().getUserId() == customerId) {
-//                customerBooking.setBooking(booking);
-//                return;
-//            }
-//        }
-//    }
-
-
-    @Override
-    public List<CustomerBooking> getAll() {
-        return new ArrayList<>(customerBookings);
-    }
+public class CustomerBookingRepository extends Repository<CustomerBooking> {
 }
