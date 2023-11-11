@@ -1,16 +1,15 @@
 package ui;
 import controller.Controller;
-
 import java.util.Scanner;
 
 public class UI {
     private Controller customerController;
-    private Controller bookingController;
+    private Controller guideController;
     private Scanner scanner = new Scanner(System.in);
 
-    public UI(Controller customerController, Controller bookingController) {
+    public UI(Controller customerController, Controller guideController) {
         this.customerController = customerController;
-        this.bookingController = bookingController;
+        this.guideController = guideController;
     }
 
     public void start() {
@@ -31,8 +30,8 @@ public class UI {
                     customerUI.run();
                     break;
                 case 2:
-                    BookingUI bookingUI = new BookingUI(bookingController);
-                    bookingUI.run();
+                    GuideUI guideUI = new GuideUI(guideController);
+                    guideUI.run();
                     break;
                 case 3:
                     exit = true;

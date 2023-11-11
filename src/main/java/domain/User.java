@@ -1,13 +1,11 @@
 package domain;
 
 abstract public class User implements Identifiable{
-    private int Id;
     private String firstName;
     private String lastName;
     private int age;
 
     public User(int Id, String firstName, String lastName, int age) {
-        this.Id = Id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -35,10 +33,6 @@ abstract public class User implements Identifiable{
 
     public void setAge(int age) {
         this.age = age;
-    }
-
-    public int getId(){
-        return Id;
     }
 
 }

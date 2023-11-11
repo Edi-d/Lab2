@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2d2096e-1618-4231-acfa-7e22e282eb16" name="Changes" comment="Added getById method and restructured project&#10;--- Fixing tests ----&#10;--- Implemeting update method ---" />
+    <list default="true" id="e2d2096e-1618-4231-acfa-7e22e282eb16" name="Changes" comment="Finished fixings">
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/Repository.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -62,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698668014827</updated>
-      <workItem from="1698668015868" duration="37527000" />
+      <workItem from="1698668015868" duration="44195000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation">
       <option name="closed" value="true" />
@@ -120,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699288937735</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Finished fixings">
+      <option name="closed" value="true" />
+      <created>1699337518432</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699337518432</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +152,7 @@
     <MESSAGE value="Completion of Repository // Start on UI" />
     <MESSAGE value="Tried to implement Identifiable Interface class --- &gt; didn't work&#10;implemented tests&#10;Debugging" />
     <MESSAGE value="Added getById method and restructured project&#10;--- Fixing tests ----&#10;--- Implemeting update method ---" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added getById method and restructured project&#10;--- Fixing tests ----&#10;--- Implemeting update method ---" />
+    <MESSAGE value="Finished fixings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished fixings" />
   </component>
 </project>

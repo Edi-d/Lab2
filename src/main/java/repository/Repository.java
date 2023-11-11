@@ -1,23 +1,20 @@
 package repository;
-
 import domain.Identifiable;
-import domain.Review;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Repository<T extends Identifiable> {
-    List<T> objects = new ArrayList<>();
-    public void add(T entity) {
+public abstract class Repository<ObjectType extends Identifiable> {
+    List<ObjectType> objects = new ArrayList<>();
+    public void add(ObjectType entity) {
         objects.add(entity);
     }
-    public void update(T entity, T newEntity) {
+    public void update(ObjectType entity, ObjectType newEntity) {
         entity = newEntity;
     }
     public void deleteById(int id) {
         objects.removeIf(entity -> entity.getId() == id);
     }
-    public List<T> getAll() {
+    public List<ObjectType> getAll() {
         return new ArrayList<>(objects);
     }
 

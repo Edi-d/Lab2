@@ -50,15 +50,15 @@ public class CustomerUI {
 
     private void addCustomer() {
         System.out.println("Enter customer details:");
+        System.out.print("CustomerId: ");
+        int customerId = scanner.nextInt();
         System.out.print("First Name: ");
         String firstName = scanner.nextLine();
         System.out.print("Last Name: ");
         String lastName = scanner.nextLine();
         System.out.print("Age: ");
         int age = scanner.nextInt();
-        System.out.print("CustomerId: ");
-        int customerId = scanner.nextInt();
-        Customer newCustomer = new Customer(firstName, lastName, age, customerId);
+        Customer newCustomer = new Customer(customerId, firstName, lastName, age);
         customerController.add(newCustomer);
         System.out.println("Customer added successfully!");
     }

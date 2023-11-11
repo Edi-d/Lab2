@@ -1,9 +1,7 @@
 package org.example;
 import controller.Controller;
-import domain.Customer;
 import repository.BookingRepository;
 import repository.CustomerRepository;
-import ui.CustomerUI;
 import ui.UI;
 
 public class Main {
