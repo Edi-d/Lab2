@@ -2,7 +2,9 @@ package tests;
 
 import controller.Controller;
 import domain.Booking;
+import domain.CyclingTour;
 import domain.Tour;
+import domain.WalkingTour;
 import factories.CyclingTourFactory;
 import factories.WalkingTourFactory;
 import org.junit.jupiter.api.Test;

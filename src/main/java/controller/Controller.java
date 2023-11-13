@@ -42,9 +42,11 @@ public class Controller<ObjectType extends Identifiable> {
             WalkingTourFactory walkingTourFactory = new WalkingTourFactory();
             tour =  walkingTourFactory.createTour(Id, name, description, price);
             discountCalculator = new PercentageDiscount();
+
         } else if ("Cycling".equalsIgnoreCase(tourType)) {
             CyclingTourFactory cyclingTourFactory = new CyclingTourFactory();
             tour = cyclingTourFactory.createTour(Id, name, description, price);
+
         } else {
             throw new IllegalArgumentException("Unknown tour type: " + tourType);
         }
