@@ -58,8 +58,12 @@ public class TourUI {
         String name = scanner.nextLine();
         System.out.print("Tour Description: ");
         String description = scanner.nextLine();
+        System.out.print("Tour Type: ");
+        String tourtype = scanner.nextLine();
 
-        Tour newTour = tourFactory.createTour(Id, name, description);
+        float price;
+        Tour newTour = tourController.createTour(Id, name, description, tourtype, price);
+        if (newTour.getClass() == )
         tourController.add(newTour);
 
         System.out.println("Tour added successfully!");

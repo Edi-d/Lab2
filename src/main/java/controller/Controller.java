@@ -1,4 +1,5 @@
 package controller;
+import DiscountStrategy.DiscountStrategy;
 import domain.CyclingTour;
 import domain.Identifiable;
 import domain.Tour;
@@ -32,13 +33,16 @@ public class Controller<ObjectType extends Identifiable> {
     public List<ObjectType> getAll() {
         return repository.getAll();
     }
-    public <ObjectType> ObjectType createTour(int Id, String name, String description, String tourType) {
+    public Tour createTour(int Id, String name, String description, String tourType, float price) {
+        DiscountStrategy discountCalculator = new DiscountStrategy();
         if ("Walking".equalsIgnoreCase(tourType)) {
             WalkingTourFactory walkingTourFactory = new WalkingTourFactory();
-            return (ObjectType) walkingTourFactory.createTour(Id, name, description);
+            WalkingTour tour =  walkingTourFactory.createTour(Id, name, description, price);
+            float discountPrice = tour.getPrice();
+            applyDiscount(discountPrice);
         } else if ("Cycling".equalsIgnoreCase(tourType)) {
             CyclingTourFactory cyclingTourFactory = new CyclingTourFactory();
-            return (ObjectType) cyclingTourFactory.createTour(Id, name, description);
+            return cyclingTourFactory.createTour(Id, name, description, price);
         } else {
             throw new IllegalArgumentException("Unknown tour type: " + tourType);
         }

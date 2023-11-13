@@ -4,11 +4,13 @@ abstract public class Tour implements Identifiable {
     private int Id;
     private String name;
     private String description;
+    private float price;
 
-    public Tour(int Id, String name, String description) {
+    public Tour(int Id, String name, String description, float price) {
         this.Id = Id;
         this.name = name;
         this.description = description;
+        this.price = price;
     }
 
     public int getId() {
@@ -33,5 +35,13 @@ abstract public class Tour implements Identifiable {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
     }
 }
