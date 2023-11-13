@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2d2096e-1618-4231-acfa-7e22e282eb16" name="Changes" comment="Implementing Factory Design Pattern" />
+    <list default="true" id="e2d2096e-1618-4231-acfa-7e22e282eb16" name="Changes" comment="Implementing Factory Design Pattern">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Subscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/SubscriberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

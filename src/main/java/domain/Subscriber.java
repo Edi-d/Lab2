@@ -1,14 +1,23 @@
 package domain;
 
 public class Subscriber implements Identifiable{
+    private static Subscriber instance;
+
     private int Id;
     private String name;
     private String email;
 
-    public Subscriber(int Id, String name, String email) {
+    private Subscriber(int Id, String name, String email) {
         this.Id = Id;
         this.name = name;
         this.email = email;
+    }
+
+    public static Subscriber getInstance(int Id, String name, String email) {
+        if (instance == null) {
+            instance = new Subscriber(Id, name, email);
+        }
+        return instance;
     }
 
     public void setId(int subscriberId) {
