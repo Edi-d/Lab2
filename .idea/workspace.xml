@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e2d2096e-1618-4231-acfa-7e22e282eb16" name="Changes" comment="Implementing Design Patterns">
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/CyclingTour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/CyclingTour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Tour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/WalkingTour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/WalkingTour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factories/CyclingTourFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factories/CyclingTourFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factories/TourFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factories/TourFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factories/WalkingTourFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factories/WalkingTourFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/TourUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/TourUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +179,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699894633219</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Implementing Design Patterns">
+      <option name="closed" value="true" />
+      <created>1699896498725</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1699896498725</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Implementing Design Patterns">
+      <option name="closed" value="true" />
+      <created>1699896629769</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1699896629769</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,5 +1,7 @@
 package controller;
 import DiscountStrategy.DiscountStrategy;
+import DiscountStrategy.PercentageDiscount;
+import DiscountStrategy.NoDiscount;
 import domain.CyclingTour;
 import domain.Identifiable;
 import domain.Tour;
@@ -34,18 +36,22 @@ public class Controller<ObjectType extends Identifiable> {
         return repository.getAll();
     }
     public Tour createTour(int Id, String name, String description, String tourType, float price) {
-        DiscountStrategy discountCalculator = new DiscountStrategy();
+        DiscountStrategy discountCalculator = new NoDiscount();
+        Tour tour;
         if ("Walking".equalsIgnoreCase(tourType)) {
             WalkingTourFactory walkingTourFactory = new WalkingTourFactory();
-            WalkingTour tour =  walkingTourFactory.createTour(Id, name, description, price);
-            float discountPrice = tour.getPrice();
-            applyDiscount(discountPrice);
+            tour =  walkingTourFactory.createTour(Id, name, description, price);
+            discountCalculator = new PercentageDiscount();
         } else if ("Cycling".equalsIgnoreCase(tourType)) {
             CyclingTourFactory cyclingTourFactory = new CyclingTourFactory();
-            return cyclingTourFactory.createTour(Id, name, description, price);
+            tour = cyclingTourFactory.createTour(Id, name, description, price);
         } else {
             throw new IllegalArgumentException("Unknown tour type: " + tourType);
         }
+
+        float discountPrice = tour.getPrice();
+        discountCalculator.applyDiscount(discountPrice);
+        return tour;
     }
 
 }
