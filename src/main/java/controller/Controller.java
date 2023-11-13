@@ -52,7 +52,8 @@ public class Controller<ObjectType extends Identifiable> {
         }
 
         float discountPrice = tour.getPrice();
-        discountCalculator.applyDiscount(discountPrice);
+        discountPrice = discountCalculator.applyDiscount(discountPrice);  // Update the discountPrice with the calculated discount
+        tour.setPrice(discountPrice);
         return tour;
     }
 

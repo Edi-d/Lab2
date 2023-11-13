@@ -1,6 +1,7 @@
 package ui;
 
 import controller.Controller;
+import domain.Subscriber;
 import domain.Tour;
 
 import java.util.Scanner;

@@ -1,11 +1,13 @@
 package ui;
 import controller.Controller;
 import domain.Guide;
+import domain.Subscriber;
 
 import java.util.Scanner;
 
 public class GuideUI {
     private Controller guideController;
+    private Controller subscriberController;
     private Scanner scanner;
 
     public GuideUI(Controller guideController) {
@@ -62,6 +64,11 @@ public class GuideUI {
         String email = scanner.nextLine();
         Guide newGuide = new Guide(Id, firstName, lastName, age, email);
         guideController.add(newGuide);
+
+        Subscriber subscriber = Subscriber.getInstance(Id, firstName, email);
+        subscriberController.add(subscriber);
+        subscriberController.notify();
+
         System.out.println("Guide added successfully!");
     }
 
