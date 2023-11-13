@@ -4,8 +4,8 @@ public class Customer extends User{
     private int Id;
 
 
-    public Customer(int Id, String firstName, String lastName, int age) {
-        super(Id, firstName, lastName, age);
+    public Customer(int Id, String firstName, String lastName, int age, String email) {
+        super(Id, firstName, lastName, age, email);
     }
 
     public int getId() {

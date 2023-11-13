@@ -24,7 +24,7 @@ public class Tests {
 
     @Test
     void saveBookingTest() {
-        Guide guide = new Guide(1, "Daniel", "Petrascu", 21);
+        Guide guide = new Guide(1, "Daniel", "Petrascu", 21, "test@gmail.com");
         Tour tour = new Tour(1, "Hidden Wonders of CLuj-Napoca", "The best tour in the city");
         Payment payment =  new Payment(1, 100, "Paypal");
         Booking booking = new Booking(1, guide, tour, payment, "2023-10-01");
@@ -38,7 +38,7 @@ public class Tests {
 
     @Test
     void saveBookingsTest() {
-        Guide guide = new Guide(1, "Daniel", "Petrascu", 21);
+        Guide guide = new Guide(1, "Daniel", "Petrascu", 21, "test@gmail.com");
         Tour tour = new Tour(1, "Hidden Wonders of CLuj-Napoca", "The best tour in the city");
         Payment payment =  new Payment(1, 100, "Paypal");
 
@@ -56,7 +56,7 @@ public class Tests {
 
     @Test
     void removeBookingTest() {
-        Guide guide = new Guide(1, "Daniel", "Petrascu", 21);
+        Guide guide = new Guide(1, "Daniel", "Petrascu", 21, "test@gmail.com");
         Tour tour = new Tour(1, "Hidden Wonders of CLuj-Napoca", "The best tour in the city");
         Payment payment =  new Payment(1, 100, "Paypal");
 
