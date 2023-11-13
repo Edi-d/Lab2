@@ -53,17 +53,16 @@ public class TourUI {
         System.out.println("Enter tour details:");
         System.out.print("TourId: ");
         int Id = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline character left by nextInt()
         System.out.print("Tour Name: ");
         String name = scanner.nextLine();
         System.out.print("Tour Description: ");
         String description = scanner.nextLine();
         System.out.print("Tour Type: ");
         String tourtype = scanner.nextLine();
+        System.out.print("Tour Price: ");
+        float price = scanner.nextInt();
 
-        float price;
         Tour newTour = tourController.createTour(Id, name, description, tourtype, price);
-        if (newTour.getClass() == )
         tourController.add(newTour);
 
         System.out.println("Tour added successfully!");
