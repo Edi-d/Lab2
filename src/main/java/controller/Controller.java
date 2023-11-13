@@ -12,11 +12,9 @@ import java.util.List;
 
 public class Controller<ObjectType extends Identifiable> {
     private Repository<ObjectType> repository;
-    private TourFactory tourFactory;
 
     public Controller(Repository<ObjectType> repository, TourFactory tourFactory) {
         this.repository = repository;
-        this.tourFactory = tourFactory;
     }
 
     public void add(ObjectType entity) {
