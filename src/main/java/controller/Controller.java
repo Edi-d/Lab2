@@ -1,7 +1,11 @@
 package controller;
 import domain.CyclingTour;
 import domain.Identifiable;
+import domain.Tour;
+import domain.WalkingTour;
+import factories.CyclingTourFactory;
 import factories.TourFactory;
+import factories.WalkingTourFactory;
 import repository.Repository;
 
 import java.util.List;
@@ -30,15 +34,16 @@ public class Controller<ObjectType extends Identifiable> {
     public List<ObjectType> getAll() {
         return repository.getAll();
     }
-    public ObjectType createTour(int Id, String name, String description, String tourType) {
-        // Logic to determine which factory to use based on tourType
+    public <ObjectType> ObjectType createTour(int Id, String name, String description, String tourType) {
         if ("Walking".equalsIgnoreCase(tourType)) {
-            return WalkingTourFactory.createTour(Id, name, description);
+            WalkingTourFactory walkingTourFactory = new WalkingTourFactory();
+            return (ObjectType) walkingTourFactory.createTour(Id, name, description);
         } else if ("Cycling".equalsIgnoreCase(tourType)) {
-            return (CyclingTour) tourFactory.createTour(Id, name, description);
+            CyclingTourFactory cyclingTourFactory = new CyclingTourFactory();
+            return (ObjectType) cyclingTourFactory.createTour(Id, name, description);
         } else {
-            // Handle unknown tour type or provide a default behavior
             throw new IllegalArgumentException("Unknown tour type: " + tourType);
         }
     }
+
 }
