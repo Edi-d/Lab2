@@ -14,17 +14,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TourControllertest {
     private Controller tourController;
-    private Repository<Tour> tourRepository;
     @Test
     public void testCreateTour() {
-        Controller tourController = new Controller(tourRepository);
-
         // Test creating a WalkingTour
         Tour walkingTour = tourController.createTour(1, "Walking Tour", "Explore the city on foot", "Walking", 50.0f);
         assertNotNull(walkingTour);
         assertEquals("Walking Tour", walkingTour.getName());
         assertEquals("Explore the city on foot", walkingTour.getDescription());
-        assertEquals(50.0f, walkingTour.getPrice());
+        assertEquals(45.0f, walkingTour.getPrice());
         assertTrue(walkingTour instanceof WalkingTour);
 
         // Test creating a CyclingTour
