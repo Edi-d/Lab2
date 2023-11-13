@@ -58,7 +58,9 @@ public class GuideUI {
         String lastName = scanner.nextLine();
         System.out.print("Age: ");
         int age = scanner.nextInt();
-        Guide newGuide = new Guide(Id, firstName, lastName, age);
+        System.out.print("Email: ");
+        String email = scanner.nextLine();
+        Guide newGuide = new Guide(Id, firstName, lastName, age, email);
         guideController.add(newGuide);
         System.out.println("Guide added successfully!");
     }

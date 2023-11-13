@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2d2096e-1618-4231-acfa-7e22e282eb16" name="Changes" comment="Implementing Factory Design Pattern">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DiscountStrategy/DiscountStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DiscountStrategy/NoDiscount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DiscountStrategy/PercentageDiscount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/TourUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Subscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Subscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/SubscriberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/SubscriberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/GuideUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/GuideUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699891086118</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Implementing Factory Design Pattern">
+      <option name="closed" value="true" />
+      <created>1699891798658</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699891798658</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

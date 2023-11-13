@@ -13,7 +13,7 @@ import java.util.List;
 public class Controller<ObjectType extends Identifiable> {
     private Repository<ObjectType> repository;
 
-    public Controller(Repository<ObjectType> repository, TourFactory tourFactory) {
+    public Controller(Repository<ObjectType> repository) {
         this.repository = repository;
     }
 
