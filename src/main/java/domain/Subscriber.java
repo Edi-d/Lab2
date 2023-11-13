@@ -13,7 +13,7 @@ public class Subscriber implements Identifiable{
         this.email = email;
     }
 
-    public static Subscriber getInstance(int Id, String name, String email) {
+    public static Subscriber createInstance(int Id, String name, String email) {
         if (instance == null) {
             instance = new Subscriber(Id, name, email);
         }
