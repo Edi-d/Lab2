@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.49">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>738</IntrospectionStateNumber>
+      <IntrospectionStateNumber>750</IntrospectionStateNumber>
       <ServerVersion>14.10</ServerVersion>
       <StartupTime>1700577127</StartupTime>
       <TimeZones>true ACDT
@@ -818,7 +818,7 @@ false posixrules
 13411||10|C|G
 13411||-9223372036854775808|U|G
 13411||10|U|G</Grants>
-      <IntrospectionStateNumber>739</IntrospectionStateNumber>
+      <IntrospectionStateNumber>750</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>admin</OwnerName>
     </database>
@@ -7616,9 +7616,63 @@ false posixrules
     <schema id="507" parent="3" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
+      <IntrospectionStateNumber>750</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2023-11-27.19:05:20.239</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-27.17:05:20</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>admin</OwnerName>
     </schema>
+    <table id="508" parent="507" name="Costumer">
+      <ObjectId>16386</ObjectId>
+      <StateNumber>749</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>admin</OwnerName>
+    </table>
+    <column id="509" parent="508" name="id">
+      <DasType>integer|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>749</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="510" parent="508" name="firstName">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>749</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="511" parent="508" name="lastName">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>749</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="512" parent="508" name="age">
+      <DasType>integer|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>749</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="513" parent="508" name="email">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>749</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="514" parent="508" name="Costumer_pk">
+      <ColNames>id</ColNames>
+      <ObjectId>16389</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>749</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="515" parent="508" name="Costumer_pk">
+      <ObjectId>16390</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>749</StateNumber>
+      <UnderlyingIndexId>16389</UnderlyingIndexId>
+    </key>
   </database-model>
 </dataSource>

@@ -1,5 +1,6 @@
 package domain;
 
+
 public class Booking implements Identifiable {
     private int Id;
     private Guide guide;

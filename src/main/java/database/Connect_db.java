@@ -6,10 +6,12 @@ import java.sql.SQLException;
 
 public class Connect_db {
 
+    private String url;
     private String user;
     private String password;
 
-    public Connect_db(String user, String password) {
+    public Connect_db(String url, String user, String password) {
+        this.url = url;
         this.user = user;
         this.password = password;
     }
@@ -18,9 +20,6 @@ public class Connect_db {
         Connection conn = null;
         try {
             Class.forName("org.postgresql.Driver");
-
-            // Set the connection URL using Docker container name
-            String url = "jdbc:postgresql://localhost:5432/virtual_guide";
 
             // Establish the connection
             conn = DriverManager.getConnection(url, user, password);
