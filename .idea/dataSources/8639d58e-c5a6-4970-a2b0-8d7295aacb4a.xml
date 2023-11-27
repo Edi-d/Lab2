@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.49">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>754</IntrospectionStateNumber>
+      <IntrospectionStateNumber>787</IntrospectionStateNumber>
       <ServerVersion>14.10</ServerVersion>
       <StartupTime>1700577127</StartupTime>
       <TimeZones>true ACDT
@@ -803,7 +803,7 @@ false posixrules
 13411||10|C|G
 13411||-9223372036854775808|U|G
 13411||10|U|G</Grants>
-      <IntrospectionStateNumber>754</IntrospectionStateNumber>
+      <IntrospectionStateNumber>768</IntrospectionStateNumber>
       <ObjectId>13777</ObjectId>
       <OwnerName>admin</OwnerName>
     </database>
@@ -818,7 +818,7 @@ false posixrules
 13411||10|C|G
 13411||-9223372036854775808|U|G
 13411||10|U|G</Grants>
-      <IntrospectionStateNumber>755</IntrospectionStateNumber>
+      <IntrospectionStateNumber>787</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>admin</OwnerName>
     </database>
@@ -4243,9 +4243,9 @@ false posixrules
     <schema id="262" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>754</IntrospectionStateNumber>
-      <IntrospectionTimestamp>2023-11-27.19:29:40.469</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-11-27.17:29:40</LocalIntrospectionTimestamp>
+      <IntrospectionStateNumber>768</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2023-11-27.19:48:51.960</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-27.17:48:52</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>admin</OwnerName>
@@ -7616,59 +7616,69 @@ false posixrules
     <schema id="507" parent="3" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>755</IntrospectionStateNumber>
-      <IntrospectionTimestamp>2023-11-27.19:29:40.954</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-11-27.17:29:41</LocalIntrospectionTimestamp>
+      <IntrospectionStateNumber>787</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2023-11-27.19:53:02.031</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-27.17:53:02</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>admin</OwnerName>
     </schema>
-    <table id="508" parent="507" name="Costumer">
+    <sequence id="508" parent="507" name="customer_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>16395</ObjectId>
+      <SequenceIdentity>1(1)..1000</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>784</StateNumber>
+      <OwnerName>admin</OwnerName>
+    </sequence>
+    <table id="509" parent="507" name="customer">
       <ObjectId>16386</ObjectId>
-      <StateNumber>749</StateNumber>
+      <StateNumber>786</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>admin</OwnerName>
     </table>
-    <column id="509" parent="508" name="id">
+    <column id="510" parent="509" name="id">
       <DasType>integer|0s</DasType>
+      <IdentityKind>always</IdentityKind>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>749</StateNumber>
+      <StateNumber>784</StateNumber>
+      <SequenceId>16395</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="510" parent="508" name="firstName">
+    <column id="511" parent="509" name="firstname">
       <DasType>varchar(50)|0s</DasType>
       <Position>2</Position>
-      <StateNumber>749</StateNumber>
+      <StateNumber>771</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="511" parent="508" name="lastName">
+    <column id="512" parent="509" name="lastname">
       <DasType>varchar(50)|0s</DasType>
       <Position>3</Position>
-      <StateNumber>749</StateNumber>
+      <StateNumber>774</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="512" parent="508" name="age">
+    <column id="513" parent="509" name="age">
       <DasType>integer|0s</DasType>
       <Position>4</Position>
-      <StateNumber>749</StateNumber>
+      <StateNumber>786</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="513" parent="508" name="email">
+    <column id="514" parent="509" name="email">
       <DasType>varchar(100)|0s</DasType>
       <Position>5</Position>
       <StateNumber>749</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="514" parent="508" name="Costumer_pk">
+    <index id="515" parent="509" name="Costumer_pk">
       <ColNames>id</ColNames>
       <ObjectId>16389</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>749</StateNumber>
+      <StateNumber>786</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="515" parent="508" name="Costumer_pk">
+    <key id="516" parent="509" name="Costumer_pk">
       <ObjectId>16390</ObjectId>
       <Primary>1</Primary>
       <StateNumber>749</StateNumber>
