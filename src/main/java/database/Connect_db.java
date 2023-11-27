@@ -33,4 +33,8 @@ public class Connect_db {
             throw new RuntimeException(e);
         }
     }
+
+    public void addDataToCostumer() {
+
+    }
 }

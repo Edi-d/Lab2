@@ -11,6 +11,8 @@ public class CustomerDatabaseRepository {
         String url = "jdbc:postgresql://localhost:5432/virtual_guide";
         String user = "admin";
         String password = "S3cret";
+
+        connection = new Connect_db(url, user, password);
     }
 
     private void viewCustomer() throws SQLException {
@@ -33,7 +35,7 @@ public class CustomerDatabaseRepository {
 
     private void addCustomer(int flightId, String airline, String departureTime, String arrivalTime) throws SQLException {
         connect();
-        String query = "INSERT INTO Flights (flightId, airline, departureTime, arrivalTime) VALUES (?, ?, ?, ?)";
+        String query = "INSERT INTO Costumer (flightId, airline, departureTime, arrivalTime) VALUES (?, ?, ?, ?)";
         try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
             preparedStatement.setInt(1, flightId);
             preparedStatement.setString(2, airline);

@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.49">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>750</IntrospectionStateNumber>
+      <IntrospectionStateNumber>754</IntrospectionStateNumber>
       <ServerVersion>14.10</ServerVersion>
       <StartupTime>1700577127</StartupTime>
       <TimeZones>true ACDT
@@ -803,7 +803,7 @@ false posixrules
 13411||10|C|G
 13411||-9223372036854775808|U|G
 13411||10|U|G</Grants>
-      <IntrospectionStateNumber>738</IntrospectionStateNumber>
+      <IntrospectionStateNumber>754</IntrospectionStateNumber>
       <ObjectId>13777</ObjectId>
       <OwnerName>admin</OwnerName>
     </database>
@@ -818,7 +818,7 @@ false posixrules
 13411||10|C|G
 13411||-9223372036854775808|U|G
 13411||10|U|G</Grants>
-      <IntrospectionStateNumber>750</IntrospectionStateNumber>
+      <IntrospectionStateNumber>755</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>admin</OwnerName>
     </database>
@@ -4243,9 +4243,9 @@ false posixrules
     <schema id="262" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>738</IntrospectionStateNumber>
-      <IntrospectionTimestamp>2023-11-27.18:35:27.396</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-11-27.16:35:27</LocalIntrospectionTimestamp>
+      <IntrospectionStateNumber>754</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2023-11-27.19:29:40.469</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-27.17:29:40</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>admin</OwnerName>
@@ -7616,9 +7616,9 @@ false posixrules
     <schema id="507" parent="3" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>750</IntrospectionStateNumber>
-      <IntrospectionTimestamp>2023-11-27.19:05:20.239</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-11-27.17:05:20</LocalIntrospectionTimestamp>
+      <IntrospectionStateNumber>755</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2023-11-27.19:29:40.954</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-27.17:29:41</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>admin</OwnerName>
