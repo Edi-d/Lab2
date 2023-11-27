@@ -17,10 +17,9 @@ public class Connect_db {
     public Connection connect() {
         Connection conn = null;
         try {
-            // Load the PostgreSQL JDBC driver
             Class.forName("org.postgresql.Driver");
 
-            // Set the connection URL
+            // Set the connection URL using Docker container name
             String url = "jdbc:postgresql://localhost:5432/virtual_guide";
 
             // Establish the connection
@@ -29,8 +28,10 @@ public class Connect_db {
 
             return conn;
 
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch (SQLException e) {
             throw new IllegalStateException("Cannot connect to the database!", e);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
         }
     }
 }
