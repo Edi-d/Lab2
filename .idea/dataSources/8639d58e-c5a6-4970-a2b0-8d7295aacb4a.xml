@@ -3,9 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.49">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>787</IntrospectionStateNumber>
+      <IntrospectionStateNumber>890</IntrospectionStateNumber>
       <ServerVersion>14.10</ServerVersion>
-      <StartupTime>1700577127</StartupTime>
+      <StartupTime>1701695137</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -803,7 +803,7 @@ false posixrules
 13411||10|C|G
 13411||-9223372036854775808|U|G
 13411||10|U|G</Grants>
-      <IntrospectionStateNumber>768</IntrospectionStateNumber>
+      <IntrospectionStateNumber>862</IntrospectionStateNumber>
       <ObjectId>13777</ObjectId>
       <OwnerName>admin</OwnerName>
     </database>
@@ -818,7 +818,7 @@ false posixrules
 13411||10|C|G
 13411||-9223372036854775808|U|G
 13411||10|U|G</Grants>
-      <IntrospectionStateNumber>787</IntrospectionStateNumber>
+      <IntrospectionStateNumber>890</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>admin</OwnerName>
     </database>
@@ -4243,9 +4243,9 @@ false posixrules
     <schema id="262" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>768</IntrospectionStateNumber>
-      <IntrospectionTimestamp>2023-11-27.19:48:51.960</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-11-27.17:48:52</LocalIntrospectionTimestamp>
+      <IntrospectionStateNumber>862</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2023-12-04.16:55:48.715</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-12-04.14:55:48</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>admin</OwnerName>
@@ -7616,73 +7616,378 @@ false posixrules
     <schema id="507" parent="3" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>787</IntrospectionStateNumber>
-      <IntrospectionTimestamp>2023-11-27.19:53:02.031</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-11-27.17:53:02</LocalIntrospectionTimestamp>
+      <IntrospectionStateNumber>890</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2023-12-04.17:31:11.552</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-12-04.15:31:11</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>admin</OwnerName>
     </schema>
-    <sequence id="508" parent="507" name="customer_id_seq">
+    <sequence id="508" parent="507" name="booking_id_seq">
       <DasType>integer|0s</DasType>
-      <ObjectId>16395</ObjectId>
-      <SequenceIdentity>1(1)..1000</SequenceIdentity>
+      <ObjectId>16400</ObjectId>
+      <SequenceIdentity>1(1)</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>784</StateNumber>
+      <StateNumber>803</StateNumber>
       <OwnerName>admin</OwnerName>
     </sequence>
-    <table id="509" parent="507" name="customer">
-      <ObjectId>16386</ObjectId>
-      <StateNumber>786</StateNumber>
+    <sequence id="509" parent="507" name="guide_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>16428</ObjectId>
+      <SequenceIdentity>1(4)</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>821</StateNumber>
+      <OwnerName>admin</OwnerName>
+    </sequence>
+    <sequence id="510" parent="507" name="location_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>16421</ObjectId>
+      <SequenceIdentity>1(1)</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>818</StateNumber>
+      <OwnerName>admin</OwnerName>
+    </sequence>
+    <sequence id="511" parent="507" name="payment_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>16410</ObjectId>
+      <SequenceIdentity>1(1)</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>809</StateNumber>
+      <OwnerName>admin</OwnerName>
+    </sequence>
+    <sequence id="512" parent="507" name="tour_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>16405</ObjectId>
+      <SequenceIdentity>1(1)</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>806</StateNumber>
+      <OwnerName>admin</OwnerName>
+    </sequence>
+    <table id="513" parent="507" name="booking">
+      <ObjectId>16401</ObjectId>
+      <StateNumber>872</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>admin</OwnerName>
     </table>
-    <column id="510" parent="509" name="id">
+    <table id="514" parent="507" name="customer">
+      <ObjectId>16386</ObjectId>
+      <StateNumber>888</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>admin</OwnerName>
+    </table>
+    <table id="515" parent="507" name="guide">
+      <ObjectId>16429</ObjectId>
+      <StateNumber>872</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>admin</OwnerName>
+    </table>
+    <table id="516" parent="507" name="location">
+      <ObjectId>16422</ObjectId>
+      <StateNumber>878</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>admin</OwnerName>
+    </table>
+    <table id="517" parent="507" name="payment">
+      <ObjectId>16411</ObjectId>
+      <StateNumber>873</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>admin</OwnerName>
+    </table>
+    <table id="518" parent="507" name="tour">
+      <ObjectId>16406</ObjectId>
+      <StateNumber>874</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>admin</OwnerName>
+    </table>
+    <column id="519" parent="513" name="id">
       <DasType>integer|0s</DasType>
-      <IdentityKind>always</IdentityKind>
+      <DefaultExpression>nextval(&apos;booking_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>784</StateNumber>
-      <SequenceId>16395</SequenceId>
+      <StateNumber>803</StateNumber>
+      <SequenceId>16400</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="511" parent="509" name="firstname">
+    <column id="520" parent="513" name="guideid">
+      <DasType>integer|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>837</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="521" parent="513" name="tourid">
+      <DasType>integer|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>840</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="522" parent="513" name="paymentid">
+      <DasType>integer|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>866</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="523" parent="513" name="date">
+      <DasType>varchar(10)|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>803</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="524" parent="513" name="customerid">
+      <DasType>integer|0s</DasType>
+      <Position>6</Position>
+      <StateNumber>869</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="525" parent="513" name="booking_guide_id_fk">
+      <ColNames>guideid</ColNames>
+      <ObjectId>16435</ObjectId>
+      <StateNumber>872</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16429</RefTableId>
+    </foreign-key>
+    <foreign-key id="526" parent="513" name="booking_tour_id_fk">
+      <ColNames>tourid</ColNames>
+      <ObjectId>16445</ObjectId>
+      <StateNumber>874</StateNumber>
+      <RefKeyColPositions>2</RefKeyColPositions>
+      <RefTableId>16406</RefTableId>
+    </foreign-key>
+    <foreign-key id="527" parent="513" name="booking_payment_id_fk">
+      <ColNames>paymentid</ColNames>
+      <ObjectId>16440</ObjectId>
+      <StateNumber>873</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16411</RefTableId>
+    </foreign-key>
+    <index id="528" parent="513" name="booking_pk">
+      <ColNames>id</ColNames>
+      <ObjectId>16419</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>815</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="529" parent="513" name="booking_pk">
+      <ObjectId>16420</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>815</StateNumber>
+      <UnderlyingIndexId>16419</UnderlyingIndexId>
+    </key>
+    <column id="530" parent="514" name="firstname">
       <DasType>varchar(50)|0s</DasType>
       <Position>2</Position>
       <StateNumber>771</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="512" parent="509" name="lastname">
+    <column id="531" parent="514" name="lastname">
       <DasType>varchar(50)|0s</DasType>
       <Position>3</Position>
       <StateNumber>774</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="513" parent="509" name="age">
+    <column id="532" parent="514" name="age">
       <DasType>integer|0s</DasType>
       <Position>4</Position>
       <StateNumber>786</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="514" parent="509" name="email">
+    <column id="533" parent="514" name="email">
       <DasType>varchar(100)|0s</DasType>
       <Position>5</Position>
       <StateNumber>749</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="515" parent="509" name="Costumer_pk">
+    <column id="534" parent="514" name="id">
+      <DasType>integer|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StateNumber>888</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="535" parent="514" name="customer_pk">
       <ColNames>id</ColNames>
-      <ObjectId>16389</ObjectId>
+      <ObjectId>16455</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>786</StateNumber>
+      <StateNumber>889</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="516" parent="509" name="Costumer_pk">
-      <ObjectId>16390</ObjectId>
+    <key id="536" parent="514" name="customer_pk">
+      <ObjectId>16456</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>749</StateNumber>
-      <UnderlyingIndexId>16389</UnderlyingIndexId>
+      <StateNumber>889</StateNumber>
+      <UnderlyingIndexId>16455</UnderlyingIndexId>
+    </key>
+    <column id="537" parent="515" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;guide_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>821</StateNumber>
+      <SequenceId>16428</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="538" parent="515" name="firstname">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>845</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="539" parent="515" name="lastname">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>846</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="540" parent="515" name="age">
+      <DasType>integer|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>826</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="541" parent="515" name="email">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>827</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="542" parent="515" name="guide_pk">
+      <ColNames>id</ColNames>
+      <ObjectId>16433</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>821</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="543" parent="515" name="guide_pk">
+      <ObjectId>16434</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>821</StateNumber>
+      <UnderlyingIndexId>16433</UnderlyingIndexId>
+    </key>
+    <column id="544" parent="516" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;location_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>818</StateNumber>
+      <SequenceId>16421</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="545" parent="516" name="name">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>818</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="546" parent="516" name="description">
+      <DasType>varchar(200)|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>818</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="547" parent="516" name="location">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>818</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="548" parent="516" name="location_pk">
+      <ColNames>id</ColNames>
+      <ObjectId>16426</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>818</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="549" parent="516" name="location_pk">
+      <ObjectId>16427</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>818</StateNumber>
+      <UnderlyingIndexId>16426</UnderlyingIndexId>
+    </key>
+    <column id="550" parent="517" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;payment_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>809</StateNumber>
+      <SequenceId>16410</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="551" parent="517" name="price">
+      <DasType>integer|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>809</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="552" parent="517" name="method">
+      <DasType>varchar(10)|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>809</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="553" parent="517" name="payment_pk">
+      <ColNames>id</ColNames>
+      <ObjectId>16415</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>809</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="554" parent="517" name="payment_pk">
+      <ObjectId>16416</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>809</StateNumber>
+      <UnderlyingIndexId>16415</UnderlyingIndexId>
+    </key>
+    <column id="555" parent="518" name="name">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>1</Position>
+      <StateNumber>806</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="556" parent="518" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;tour_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>806</StateNumber>
+      <SequenceId>16405</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="557" parent="518" name="description">
+      <DasType>varchar(200)|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>806</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="558" parent="518" name="locationid">
+      <DasType>integer|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>855</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="559" parent="518" name="tour_location_id_fk">
+      <ColNames>locationid</ColNames>
+      <ObjectId>16450</ObjectId>
+      <StateNumber>878</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16422</RefTableId>
+    </foreign-key>
+    <index id="560" parent="518" name="tour_pk">
+      <ColNames>id</ColNames>
+      <ObjectId>16417</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>812</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="561" parent="518" name="tour_pk">
+      <ObjectId>16418</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>812</StateNumber>
+      <UnderlyingIndexId>16417</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>
