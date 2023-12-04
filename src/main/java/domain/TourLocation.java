@@ -2,39 +2,30 @@ package domain;
 
 public class TourLocation implements Identifiable {
     private int Id;
-    private Tour tour;
-    private LocationMapping location;
-    private int Order;
-
-    public Tour getTour() {
-        return tour;
+    private String name;
+    private String description;
+    private String location;
+    public String getName() {
+        return name;
     }
 
-    public void setTour(Tour tour) {
-        this.tour = tour;
+    public String getDescription() {
+        return description;
     }
 
-    public LocationMapping getLocation() {
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getLocation() {
         return location;
     }
 
-    public void setLocation(LocationMapping location) {
-        this.location = location;
-    }
-
-    public int getOrder() {
-        return Order;
-    }
-
-    public void setOrder(int order) {
-        Order = order;
-    }
-
-    public TourLocation(int Id, Tour tour, LocationMapping location, int order) {
+    public TourLocation(int Id, String name, String description, String location) {
         this.Id = Id;
-        this.tour = tour;
+        this.name = name;
+        this.description = description;
         this.location = location;
-        Order = order;
     }
 
     @Override

@@ -5,9 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2d2096e-1618-4231-acfa-7e22e282eb16" name="Changes" comment="Implementing Design Patterns">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dbRepo/Repo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a/storage_v2/_src_/database/virtual_guide.yAgZMA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a/storage_v2/_src_/database/virtual_guide.yAgZMA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/Connect_db.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/Connect_db.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dbRepo/BookingRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbRepo/BookingRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dbRepo/CustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbRepo/CustomerRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dbRepo/GuideRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbRepo/GuideRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dbRepo/LocationRept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbRepo/LocationRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dbRepo/PaymentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbRepo/PaymentRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dbRepo/TourRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbRepo/TourRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/domain/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/CyclingTour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/CyclingTour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Tour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/TourLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/TourLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/WalkingTour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/WalkingTour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factories/CyclingTourFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factories/CyclingTourFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factories/WalkingTourFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factories/WalkingTourFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tests/TourControllertest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/TourControllertest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tests/testDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/testDB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +42,23 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "octavi42"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="5b8a4913-0e66-472a-8341-26ac2c3c259e" />
+        <option name="url" value="https://github.com/Edi-d/Lab2.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -66,8 +100,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.testDB">
-    <configuration name="TourControllertest.testCreateTour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.testDB.generalTest">
+    <configuration name="testDB.addCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MAP-Lab2" />
       <extension name="coverage">
         <pattern>
@@ -76,14 +110,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TourControllertest" />
-      <option name="METHOD_NAME" value="testCreateTour" />
+      <option name="MAIN_CLASS_NAME" value="tests.testDB" />
+      <option name="METHOD_NAME" value="addCustomer" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testDB" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testDB.addGuide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MAP-Lab2" />
       <extension name="coverage">
         <pattern>
@@ -93,12 +127,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.testDB" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="addGuide" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testDB.test_connection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testDB.deleteGuide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MAP-Lab2" />
       <extension name="coverage">
         <pattern>
@@ -108,7 +143,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.testDB" />
-      <option name="METHOD_NAME" value="test_connection" />
+      <option name="METHOD_NAME" value="deleteGuide" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testDB.generalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MAP-Lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.testDB" />
+      <option name="METHOD_NAME" value="generalTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testDB.getGuide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MAP-Lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.testDB" />
+      <option name="METHOD_NAME" value="getGuide" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,20 +187,13 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.testDB" />
-        <item itemvalue="JUnit.testDB.test_connection" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="JUnit.TourControllertest.testCreateTour" />
+        <item itemvalue="JUnit.testDB.generalTest" />
+        <item itemvalue="JUnit.testDB.addGuide" />
+        <item itemvalue="JUnit.testDB.addCustomer" />
+        <item itemvalue="JUnit.testDB.getGuide" />
+        <item itemvalue="JUnit.testDB.deleteGuide" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +206,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698668014827</updated>
       <workItem from="1698668015868" duration="53198000" />
-      <workItem from="1701095214775" duration="4053000" />
+      <workItem from="1701095214775" duration="21394000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation">
       <option name="closed" value="true" />
