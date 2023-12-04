@@ -36,7 +36,7 @@ public class testDB {
         assertNotNull(db, "Connection should not be null");
 
 
-        Customer customer = new Customer(random.nextInt(Integer.MAX_VALUE), "John", "Doe", 25, "johndoe@mail.com");
+        Customer customer = new Customer(0, "John", "Doe", 25, "johndoe@mail.com");
         repo.customerDatabaseRepository.addCustomer(db, customer.getId(), customer.getFirstName(), customer.getLastName(),
                 customer.getAge(), customer.getEmail());
 

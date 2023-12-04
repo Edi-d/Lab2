@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2d2096e-1618-4231-acfa-7e22e282eb16" name="Changes" comment="Implementing Design Patterns">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dbRepo/Repo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a/storage_v2/_src_/database/virtual_guide.yAgZMA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a/storage_v2/_src_/database/virtual_guide.yAgZMA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dbRepo/BookingRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbRepo/BookingRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dbRepo/CustomerRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbRepo/CustomerRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dbRepo/GuideRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbRepo/GuideRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dbRepo/LocationRept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbRepo/LocationRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dbRepo/PaymentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbRepo/PaymentRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dbRepo/TourRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbRepo/TourRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/CyclingTour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/CyclingTour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Tour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/TourLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/TourLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/WalkingTour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/WalkingTour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factories/CyclingTourFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factories/CyclingTourFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factories/WalkingTourFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factories/WalkingTourFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/TourControllertest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/TourControllertest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tests/testDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/testDB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -206,7 +187,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698668014827</updated>
       <workItem from="1698668015868" duration="53198000" />
-      <workItem from="1701095214775" duration="21394000" />
+      <workItem from="1701095214775" duration="22649000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation">
       <option name="closed" value="true" />
@@ -336,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699902106849</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Implementing Design Patterns">
+      <option name="closed" value="true" />
+      <created>1701711252159</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1701711252159</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
