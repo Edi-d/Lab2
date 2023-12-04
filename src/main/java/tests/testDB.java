@@ -1,13 +1,13 @@
 package tests;
 
+import java.util.Random;
+import java.util.UUID;
+
 import database.Connect_db;
-import dbRepo.GuideRepo;
-import domain.Guide;
-import domain.User;
+import dbRepo.*;
+import domain.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import dbRepo.CustomerRepo;
-import domain.Customer;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -16,88 +16,18 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class testDB {
-
     private Connect_db dbConnection;
-    private CustomerRepo customerDatabaseRepository;
-    private GuideRepo gudiesDatabaseRepository;
+
+    private Repo repo;
+    Random random = new Random();
 
     @BeforeEach
     void setUp() {
         // Initialize your database connection here if needed
         dbConnection = new Connect_db("jdbc:postgresql://localhost:5432/virtual_guide", "admin", "S3cret");
-        customerDatabaseRepository = new CustomerRepo();
-        gudiesDatabaseRepository = new GuideRepo();
-    }
+        repo = new Repo();
 
-    @Test
-    void testConnection() throws SQLException {
-        Connection db = dbConnection.connect();
-        assertNotNull(db, "Connection should not be null");
-    }
-
-    @Test
-    void addCustomer() throws SQLException {
-        Connection db = dbConnection.connect();
-        assertNotNull(db, "Connection should not be null");
-
-        Customer customer = new Customer(1, "John", "Doe", 25, "jondoe@mail.com");
-
-        // Adding the customer to the database
-        customerDatabaseRepository.addCustomer(db, customer.getFirstName(), customer.getLastName(),
-                customer.getAge(), customer.getEmail());
-    }
-
-    @Test
-    void deleteCustomer() throws SQLException {
-        Connection db = dbConnection.connect();
-        assertNotNull(db, "Connection should not be null");
-
-        customerDatabaseRepository.deleteCustomer(db, 1);
-    }
-
-    @Test
-    void getCustomer() throws SQLException {
-        Connection db = dbConnection.connect();
-        assertNotNull(db, "Connection should not be null");
-
-        List<Object[]> costumers =  customerDatabaseRepository.getCustomer(db, 3);
-        assertNotNull(costumers, "Costumers should not be null");
-        assertEquals(costumers.size(), 0, "Costumers should not be empty");
-
-        costumers =  customerDatabaseRepository.getCustomer(db, 4);
-        assertNotEquals(costumers.size(), 0, "Costumers should not be empty");
-    }
-
-
-    @Test
-    void addGuide() throws SQLException {
-        Connection db = dbConnection.connect();
-        assertNotNull(db, "Connection should not be null");
-
-        Guide guide = new Guide(1, "John", "Doe", 25, "jondoe@mail.com");
-
-        gudiesDatabaseRepository.addGuide(db, guide.getFirstName(), guide.getLastName(), guide.getAge(), guide.getEmail());
-    }
-
-    @Test
-    void deleteGuide() throws SQLException {
-        Connection db = dbConnection.connect();
-        assertNotNull(db, "Connection should not be null");
-
-        gudiesDatabaseRepository.deleteGuide(db, 1);
-    }
-
-    @Test
-    void getGuide() throws SQLException {
-        Connection db = dbConnection.connect();
-        assertNotNull(db, "Connection should not be null");
-
-        List<Object[]> costumers =  gudiesDatabaseRepository.getGuide(db, 1);
-        assertNotNull(costumers, "Costumers should not be null");
-        assertEquals(costumers.size(), 0, "Costumers should not be empty");
-
-        costumers =  gudiesDatabaseRepository.getGuide(db, 2);
-        assertNotEquals(costumers.size(), 0, "Costumers should not be empty");
+        Random random = new Random();
     }
 
     @Test
@@ -105,11 +35,50 @@ public class testDB {
         Connection db = dbConnection.connect();
         assertNotNull(db, "Connection should not be null");
 
-        Customer customer = new Customer(1, "John", "Doe", 25, "johndoe@mail.com");
-        customerDatabaseRepository.addCustomer(db, customer.getFirstName(), customer.getLastName(),
+
+        Customer customer = new Customer(random.nextInt(Integer.MAX_VALUE), "John", "Doe", 25, "johndoe@mail.com");
+        repo.customerDatabaseRepository.addCustomer(db, customer.getId(), customer.getFirstName(), customer.getLastName(),
                 customer.getAge(), customer.getEmail());
 
+        Guide guide = new Guide(0, "John", "Doe", 25, "johndoe@mail.com");
+        repo.gudiesDatabaseRepository.addGuide(db, guide.getId(), guide.getFirstName(), guide.getLastName(), guide.getAge(), guide.getEmail());
 
+        Payment payment = new Payment(0, 1, "card");
+        repo.paymentDatabaseRepository.addPayment(db, payment.getId(), payment.getPrice(), payment.getMethod());
+
+        TourLocation location = new TourLocation(0, "Location", "Location description", "Location address");
+        repo.locationDatabaseRepository.addLocation(db, location.getId(), location.getName(), location.getDescription(), location.getLocation());
+
+        Tour tour = new Tour(0, "Tour", "Tour description", location);
+        repo.tourDatabaseRepository.addTour(db, tour.getId(), tour.getName(), tour.getDescription(), tour.getLocation().getId());
+
+        Booking booking = new Booking(0, customer, guide, tour, payment, "2021-05-05 12:00:00");
+        repo.bookingDatabaseRepository.addBooking(db, booking.getId(), booking.getGuide().getId(), booking.getTour().getId(), booking.getPayment().getId(), booking.getDateTime(), booking.getCustomer().getId());
+
+        List<Object[]> customers = repo.customerDatabaseRepository.getCustomer(db, 1);
+        assertEquals(customers.size(), 0);
+
+        customers = repo.customerDatabaseRepository.getCustomer(db, 0);
+        assertEquals(customers.size(), 1);
+
+        List<Object[]> bookings = repo.bookingDatabaseRepository.getBooking(db, 1);
+        assertEquals(bookings.size(), 0);
+
+        bookings = repo.bookingDatabaseRepository.getBooking(db, 0);
+        assertEquals(bookings.size(), 1);
+
+        repo.bookingDatabaseRepository.deleteBooking(db, 0);
+        repo.customerDatabaseRepository.deleteCustomer(db, 0);
+        repo.gudiesDatabaseRepository.deleteGuide(db, 0);
+        repo.paymentDatabaseRepository.deletePayment(db, 0);
+        repo.tourDatabaseRepository.deleteTour(db, 0);
+        repo.locationDatabaseRepository.deleteLocation(db, 0);
+
+        customers = repo.customerDatabaseRepository.getCustomer(db, 0);
+        assertEquals(customers.size(), 0);
+
+        bookings = repo.bookingDatabaseRepository.getBooking(db, 0);
+        assertEquals(bookings.size(), 0);
     }
 
 }

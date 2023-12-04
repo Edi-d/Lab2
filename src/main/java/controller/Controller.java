@@ -51,9 +51,9 @@ public class Controller<ObjectType extends Identifiable> {
             throw new IllegalArgumentException("Unknown tour type: " + tourType);
         }
 
-        float discountPrice = tour.getPrice();
-        discountPrice = discountCalculator.applyDiscount(discountPrice);  // Update the discountPrice with the calculated discount
-        tour.setPrice(discountPrice);
+//        float discountPrice = tour.getPrice();
+//        discountPrice = discountCalculator.applyDiscount(discountPrice);  // Update the discountPrice with the calculated discount
+//        tour.setPrice(discountPrice);
         return tour;
     }
 

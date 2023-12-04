@@ -1,16 +1,16 @@
 package domain;
 
-abstract public class Tour implements Identifiable {
+public class Tour implements Identifiable {
     private int Id;
     private String name;
     private String description;
-    private float price;
+    private TourLocation location;
 
-    public Tour(int Id, String name, String description, float price) {
+    public Tour(int Id, String name, String description, TourLocation location) {
         this.Id = Id;
         this.name = name;
         this.description = description;
-        this.price = price;
+        this.location = location;
     }
 
     public int getId() {
@@ -37,11 +37,8 @@ abstract public class Tour implements Identifiable {
         this.description = description;
     }
 
-    public float getPrice() {
-        return price;
+    public TourLocation getLocation() {
+        return location;
     }
 
-    public void setPrice(float price) {
-        this.price = price;
-    }
 }

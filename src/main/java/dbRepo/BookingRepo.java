@@ -10,9 +10,9 @@ public class BookingRepo {
 
     controller.CrudRepository crudRepository = new CrudRepository();
 
-    public void addBooking(Connection db, int guideid, int tourid, int paymentid, String date, int customerid) throws SQLException {
-        String addCustomerQuery = "INSERT INTO public.Booking (guideid, tourid, paymentid, date, customerid) VALUES (?, ?, ?, ?, ?)";
-        crudRepository.addObjectToDatabase(db, addCustomerQuery, guideid, tourid, paymentid, date, customerid);
+    public void addBooking(Connection db, int id, int guideid, int tourid, int paymentid, String date, int customerid) throws SQLException {
+        String addCustomerQuery = "INSERT INTO public.Booking (id, guideid, tourid, paymentid, date, customerid) VALUES (?, ?, ?, ?, ?, ?)";
+        crudRepository.addObjectToDatabase(db, addCustomerQuery, id, guideid, tourid, paymentid, date, customerid);
     }
 
     public void deleteBooking(Connection db, int id) throws SQLException {

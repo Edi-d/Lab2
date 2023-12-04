@@ -10,9 +10,9 @@ public class GuideRepo {
 
     controller.CrudRepository crudRepository = new CrudRepository();
 
-    public void addGuide(Connection db, String firstName, String lastName, int age, String email) throws SQLException {
-        String addCustomerQuery = "INSERT INTO public.Guide (firstName, lastName, age, email) VALUES (?, ?, ?, ?)";
-        crudRepository.addObjectToDatabase(db, addCustomerQuery, firstName, lastName, age, email);
+    public void addGuide(Connection db, int id, String firstName, String lastName, int age, String email) throws SQLException {
+        String addCustomerQuery = "INSERT INTO public.Guide (id, firstName, lastName, age, email) VALUES (?, ?, ?, ?, ?)";
+        crudRepository.addObjectToDatabase(db, addCustomerQuery, id, firstName, lastName, age, email);
     }
 
     public void deleteGuide(Connection db, int id) throws SQLException {

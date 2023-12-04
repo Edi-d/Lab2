@@ -10,9 +10,9 @@ public class TourRepo {
 
     controller.CrudRepository crudRepository = new CrudRepository();
 
-    public void addTour(Connection db, String name, String description, int locationid) throws SQLException {
-        String addCustomerQuery = "INSERT INTO public.Tour (name, description, locationid) VALUES (?, ?, ?)";
-        crudRepository.addObjectToDatabase(db, addCustomerQuery, name, description, locationid);
+    public void addTour(Connection db, int id, String name, String description, int locationid) throws SQLException {
+        String addCustomerQuery = "INSERT INTO public.Tour (id, name, description, locationid) VALUES (?, ?, ?, ?)";
+        crudRepository.addObjectToDatabase(db, addCustomerQuery, id, name, description, locationid);
     }
 
     public void deleteTour(Connection db, int id) throws SQLException {

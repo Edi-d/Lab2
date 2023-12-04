@@ -7,9 +7,11 @@ public class Booking implements Identifiable {
     private Tour tour;
     private Payment payment;
     private String dateTime;
+    private Customer customer;
 
-    public Booking(int Id, Guide guide, Tour tour, Payment payment, String dateTime) {
+    public Booking(int Id, Customer customer, Guide guide, Tour tour, Payment payment, String dateTime) {
         this.Id = Id;
+        this.customer = customer;
         this.guide = guide;
         this.tour = tour;
         this.payment = payment;
@@ -34,6 +36,10 @@ public class Booking implements Identifiable {
 
     public Tour getTour() {
         return tour;
+    }
+
+    public Customer getCustomer() {
+        return customer;
     }
 
     public void setTour(Tour tour) {

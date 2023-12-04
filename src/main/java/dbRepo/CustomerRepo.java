@@ -7,9 +7,9 @@ import controller.CrudRepository;
 public class CustomerRepo {
     controller.CrudRepository crudRepository = new CrudRepository();
 
-    public void addCustomer(Connection db, String firstName, String lastName, int age, String email) throws SQLException {
-        String addCustomerQuery = "INSERT INTO public.Customer (firstName, lastName, age, email) VALUES (?, ?, ?, ?)";
-        crudRepository.addObjectToDatabase(db, addCustomerQuery, firstName, lastName, age, email);
+    public void addCustomer(Connection db, int id, String firstName, String lastName, int age, String email) throws SQLException {
+        String addCustomerQuery = "INSERT INTO public.Customer (id, firstName, lastName, age, email) VALUES (?, ?, ?, ?, ?)";
+        crudRepository.addObjectToDatabase(db, addCustomerQuery, id, firstName, lastName, age, email);
     }
 
     public void deleteCustomer(Connection db, int id) throws SQLException {

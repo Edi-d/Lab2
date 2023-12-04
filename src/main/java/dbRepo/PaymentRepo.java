@@ -10,9 +10,9 @@ public class PaymentRepo {
 
     controller.CrudRepository crudRepository = new CrudRepository();
 
-    public void addPayment(Connection db, int price, String method) throws SQLException {
-        String addCustomerQuery = "INSERT INTO public.Payment (price, method) VALUES (?, ?)";
-        crudRepository.addObjectToDatabase(db, addCustomerQuery, price, method);
+    public void addPayment(Connection db, int id, int price, String method) throws SQLException {
+        String addCustomerQuery = "INSERT INTO public.Payment (id, price, method) VALUES (?, ?, ?)";
+        crudRepository.addObjectToDatabase(db, addCustomerQuery, id, price, method);
     }
 
     public void deletePayment(Connection db, int id) throws SQLException {
