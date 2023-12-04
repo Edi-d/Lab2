@@ -15,18 +15,16 @@ public class CustomerDatabaseRepository {
 
     private void viewCustomer() throws SQLException {
         connect();
-        String query = "SELECT * FROM Customer";
+        String query = "SELECT * FROM Customers";
         try (Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(query)) {
             while (resultSet.next()) {
-                int Id = resultSet.getInt("id");
-                String firstName = resultSet.getString("firstName");
-                String lastName = resultSet.getString("lastName");
-                int age = resultSet.getInt("age");
-                String email = resultSet.getString("email");
+                int flightId = resultSet.getInt("flightId");
+                String airline = resultSet.getString("airline");
+                String departureTime = resultSet.getString("departureTime");
+                String arrivalTime = resultSet.getString("arrivalTime");
 
-
-                System.out.println("ID: " + Id + ", FirstName: " + firstName + ", Last Name: " + lastName + ", age: " + age);
+                System.out.println("ID: " + flightId + ", Airline: " + airline + ", departureTime: " + departureTime + ", arrivalTime: " + arrivalTime);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -35,7 +33,7 @@ public class CustomerDatabaseRepository {
 
     private void addCustomer(int flightId, String airline, String departureTime, String arrivalTime) throws SQLException {
         connect();
-        String query = "INSERT INTO Flight (flightId, airline, departureTime, arrivalTime) VALUES (?, ?, ?, ?)";
+        String query = "INSERT INTO Flights (flightId, airline, departureTime, arrivalTime) VALUES (?, ?, ?, ?)";
         try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
             preparedStatement.setInt(1, flightId);
             preparedStatement.setString(2, airline);
