@@ -62,5 +62,4 @@ public class CrudRepository {
         return resultList;
     }
 
-
 }

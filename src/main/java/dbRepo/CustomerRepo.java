@@ -4,6 +4,8 @@ import java.sql.*;
 import java.util.List;
 
 import controller.CrudRepository;
+import database.Connect_db;
+
 public class CustomerRepo {
     controller.CrudRepository crudRepository = new CrudRepository();
 
@@ -21,5 +23,11 @@ public class CustomerRepo {
         String query = "SELECT * FROM public.Customer WHERE id = ?";
 
         return crudRepository.getFromDatabase(db, query, id);
+    }
+
+    public List<Object[]> getCustomerByEmail(Connection db, String email) throws SQLException {
+        String query = "SELECT * FROM public.Customer WHERE email = ?";
+
+        return crudRepository.getFromDatabase((Connection) db, query, email);
     }
 }

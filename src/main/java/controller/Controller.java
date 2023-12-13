@@ -9,7 +9,6 @@ import domain.WalkingTour;
 import factories.CyclingTourFactory;
 import factories.TourFactory;
 import factories.WalkingTourFactory;
-import org.springframework.web.bind.annotation.GetMapping;
 import repository.Repository;
 
 import java.util.List;
@@ -58,9 +57,5 @@ public class Controller<ObjectType extends Identifiable> {
         return tour;
     }
 
-    @GetMapping("api/tours")
-    public String getAllTours() {
-        return "ha";
-    }
 
 }
