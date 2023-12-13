@@ -1,5 +1,6 @@
 package authenticator;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ProxyPatternLoginApp {
@@ -10,19 +11,23 @@ public class ProxyPatternLoginApp {
         while (true) {
             displayMenu();
 
-            Scanner scanner = new Scanner(System.in);
-            int choice = scanner.nextInt();
-            scanner.nextLine();
+            try {
+                Scanner scanner = new Scanner(System.in);
+                int choice = scanner.nextInt();
+                scanner.nextLine();  // Consume the newline character
 
-            switch (choice) {
-                case 1:
-                    performLogin(authenticatorProxy);
-                    break;
-                case 2:
-                    System.out.println("Exiting the application. Goodbye!");
-                    System.exit(0);
-                default:
-                    System.out.println("Invalid choice. Please try again.");
+                switch (choice) {
+                    case 1:
+                        performLogin(authenticatorProxy);
+                        break;
+                    case 2:
+                        System.out.println("Exiting the application. Goodbye!");
+                        System.exit(0);
+                    default:
+                        System.out.println("Invalid choice. Please try again.");
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid input. Please enter a valid option.");
             }
         }
     }

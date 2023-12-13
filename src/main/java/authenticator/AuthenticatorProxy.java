@@ -27,7 +27,7 @@ public class AuthenticatorProxy implements Authenticator {
             if (!guideInfoList.isEmpty()) {
                 Object[] guideInfo = guideInfoList.get(0);
                 String storedPassword = (String) guideInfo[5];
-                realAuthenticator.authenticate(email, password);
+                realAuthenticator.authenticate(email, storedPassword);
 
             } else {
                 return false;
