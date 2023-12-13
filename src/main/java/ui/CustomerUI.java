@@ -60,7 +60,9 @@ public class CustomerUI {
         int age = scanner.nextInt();
         System.out.print("Email: ");
         String email = scanner.nextLine();
-        Customer newCustomer = new Customer(customerId, firstName, lastName, age, email);
+        System.out.print("Password: ");
+        String password = scanner.nextLine();
+        Customer newCustomer = new Customer(customerId, firstName, lastName, age, email, password);
         customerController.add(newCustomer);
         System.out.println("Customer added successfully!");
     }

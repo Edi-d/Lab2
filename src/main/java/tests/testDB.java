@@ -36,11 +36,11 @@ public class testDB {
         assertNotNull(db, "Connection should not be null");
 
 
-        Customer customer = new Customer(0, "John", "Doe", 25, "johndoe@mail.com");
+        Customer customer = new Customer(0, "John", "Doe", 25, "johndoe@mail.com", "pass123");
         repo.customerDatabaseRepository.addCustomer(db, customer.getId(), customer.getFirstName(), customer.getLastName(),
                 customer.getAge(), customer.getEmail());
 
-        Guide guide = new Guide(0, "John", "Doe", 25, "johndoe@mail.com");
+        Guide guide = new Guide(0, "John", "Doe", 25, "johndoe@mail.com", "pass123");
         repo.gudiesDatabaseRepository.addGuide(db, guide.getId(), guide.getFirstName(), guide.getLastName(), guide.getAge(), guide.getEmail());
 
         Payment payment = new Payment(0, 1, "card");

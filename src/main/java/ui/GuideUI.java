@@ -62,7 +62,9 @@ public class GuideUI {
         int age = scanner.nextInt();
         System.out.print("Email: ");
         String email = scanner.nextLine();
-        Guide newGuide = new Guide(Id, firstName, lastName, age, email);
+        System.out.print("Password: ");
+        String password = scanner.nextLine();
+        Guide newGuide = new Guide(Id, firstName, lastName, age, email, password);
         guideController.add(newGuide);
 
         Subscriber subscriber = Subscriber.getInstance(Id, firstName, email);
