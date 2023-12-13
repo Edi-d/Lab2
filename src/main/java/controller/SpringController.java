@@ -1,7 +1,6 @@
 package controller;
 
 import authenticator.AdminUserAuthenticator;
-import authenticator.Authenticator;
 import authenticator.AuthenticatorProxy;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,8 +13,7 @@ public class SpringController {
         String email = loginRequest.getEmail();
         String password = loginRequest.getPassword();
 
-        Authenticator adminAuthenticator = new AdminUserAuthenticator();
-        Authenticator authenticatorProxy = new AuthenticatorProxy(adminAuthenticator);
+        AuthenticatorProxy authenticatorProxy = new AuthenticatorProxy();
 
         if (authenticatorProxy.authenticate(email, password)) {
             return "Login successful!";
@@ -23,9 +21,12 @@ public class SpringController {
         else{
             return "Login failed. Invalid credentials";
         }
-
     }
 
+    @GetMapping("/test")
+    public String test() {
+        return "Hello world!";
+    }
 }
 
 class LoginRequest {

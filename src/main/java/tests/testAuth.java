@@ -1,20 +1,19 @@
 package tests;
 
 import authenticator.AdminUserAuthenticator;
-import authenticator.Authenticator;
 import authenticator.AuthenticatorProxy;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class testAuth {
     @Test
     void testAuth() {
-        Authenticator adminAuthenticator = new AdminUserAuthenticator();
-        Authenticator authenticatorProxy = new AuthenticatorProxy(adminAuthenticator);
+        AuthenticatorProxy authenticatorProxy = new AuthenticatorProxy();
 
         assertFalse(authenticatorProxy.authenticate("wrongEmail", "wrongPassword"));
+        assertFalse(authenticatorProxy.authenticate("edi@gmail.com", "pass12"));
         assertTrue(authenticatorProxy.authenticate("edi@gmail.com", "pass123"));
     }
 

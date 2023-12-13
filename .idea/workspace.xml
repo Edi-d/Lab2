@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2d2096e-1618-4231-acfa-7e22e282eb16" name="Changes" comment="Implementing Design Patterns">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tests/testAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/authenticator/AdminUserAuthenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/authenticator/AdminUserAuthenticator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/authenticator/Authenticator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/authenticator/AuthenticatorProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/authenticator/AuthenticatorProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/authenticator/ProxyPatternLoginApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/authenticator/ProxyPatternLoginApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SpringController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SpringController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tests/testAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/testAuth.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +68,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -100,6 +106,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testAuth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MAP-Lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.testAuth" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="testAuth.testAuth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MAP-Lab2" />
       <extension name="coverage">
@@ -127,22 +148,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.testDB" />
       <option name="METHOD_NAME" value="addCustomer" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testDB.addGuide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MAP-Lab2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.testDB" />
-      <option name="METHOD_NAME" value="addGuide" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,10 +185,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.testAuth.testAuth" />
+        <item itemvalue="JUnit.testAuth" />
         <item itemvalue="Application.ProxyPatternLoginApp" />
         <item itemvalue="JUnit.testDB.addCustomer" />
         <item itemvalue="JUnit.testDB.generalTest" />
-        <item itemvalue="JUnit.testDB.addGuide" />
       </list>
     </recent_temporary>
   </component>
