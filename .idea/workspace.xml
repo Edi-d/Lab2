@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2d2096e-1618-4231-acfa-7e22e282eb16" name="Changes" comment="Database Repository">
-      <change afterPath="$PROJECT_DIR$/src/main/java/authenticator/AdminUserAuthenticator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/authenticator/Authenticator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/authenticator/AuthenticatorProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/authenticator/ProxyPatternLoginApp.java" afterDir="false" />
+    <list default="true" id="e2d2096e-1618-4231-acfa-7e22e282eb16" name="Changes" comment="Implementing Design Patterns">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a/storage_v2/_src_/database/virtual_guide.yAgZMA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a/storage_v2/_src_/database/virtual_guide.yAgZMA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dbRepo/GuideRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbRepo/GuideRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Guide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Guide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/testDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/testDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/CustomerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/CustomerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/GuideUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/GuideUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/authenticator/AdminUserAuthenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/authenticator/AdminUserAuthenticator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/authenticator/Authenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/authenticator/Authenticator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/authenticator/AuthenticatorProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/authenticator/AuthenticatorProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SpringController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SpringController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +91,20 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.Main">
+    <configuration name="ProxyPatternLoginApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="authenticator.ProxyPatternLoginApp" />
+      <module name="MAP-Lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="authenticator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="testDB.addCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MAP-Lab2" />
       <extension name="coverage">
@@ -125,22 +132,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.testDB" />
       <option name="METHOD_NAME" value="addGuide" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testDB.deleteGuide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MAP-Lab2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.testDB" />
-      <option name="METHOD_NAME" value="deleteGuide" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProxyPatternLoginApp" />
+        <item itemvalue="JUnit.testDB.addCustomer" />
         <item itemvalue="JUnit.testDB.generalTest" />
         <item itemvalue="JUnit.testDB.addGuide" />
-        <item itemvalue="JUnit.testDB.addCustomer" />
         <item itemvalue="JUnit.testDB.getGuide" />
-        <item itemvalue="JUnit.testDB.deleteGuide" />
       </list>
     </recent_temporary>
   </component>

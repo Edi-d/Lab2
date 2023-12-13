@@ -1,5 +1,5 @@
 package authenticator;
 
 public interface Authenticator {
-    void authenticate(String email, String password);
+    boolean authenticate(String email, String password);
 }

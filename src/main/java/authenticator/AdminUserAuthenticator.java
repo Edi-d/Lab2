@@ -15,11 +15,11 @@ public class AdminUserAuthenticator implements Authenticator {
     }
 
     @Override
-    public void authenticate(String username, String password) {
+    public boolean authenticate(String username, String password) {
         if (userDatabase.containsKey(username) && userDatabase.get(username).equals(password)) {
-            System.out.println("Login successful. Welcome to the Admin page, " + username + "!");
+            return true;
         } else {
-            System.out.println("User not an Admin!");
+            return false;
         }
     }
 }
