@@ -26,14 +26,11 @@ public class SpringController {
 
     }
 
-    // Add more request mapping methods as needed
 }
 
 class LoginRequest {
     private String email;
     private String password;
-
-    // Getters and setters
 
     public String getEmail() {
         return email;

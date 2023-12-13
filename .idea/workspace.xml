@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2d2096e-1618-4231-acfa-7e22e282eb16" name="Changes" comment="Implementing Design Patterns">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a/storage_v2/_src_/database/virtual_guide.yAgZMA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8639d58e-c5a6-4970-a2b0-8d7295aacb4a/storage_v2/_src_/database/virtual_guide.yAgZMA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tests/testAuth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/authenticator/AdminUserAuthenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/authenticator/AdminUserAuthenticator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/authenticator/Authenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/authenticator/Authenticator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/authenticator/AuthenticatorProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/authenticator/AuthenticatorProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SpringController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SpringController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +86,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Main">
+  <component name="RunManager" selected="JUnit.testAuth.testAuth">
     <configuration name="ProxyPatternLoginApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="authenticator.ProxyPatternLoginApp" />
       <module name="MAP-Lab2" />
@@ -101,6 +96,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testAuth.testAuth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MAP-Lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.testAuth" />
+      <option name="METHOD_NAME" value="testAuth" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,22 +164,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testDB.getGuide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MAP-Lab2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.testDB" />
-      <option name="METHOD_NAME" value="getGuide" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="MAP-Lab2" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.Main" />
@@ -184,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.testAuth.testAuth" />
         <item itemvalue="Application.ProxyPatternLoginApp" />
         <item itemvalue="JUnit.testDB.addCustomer" />
         <item itemvalue="JUnit.testDB.generalTest" />
         <item itemvalue="JUnit.testDB.addGuide" />
-        <item itemvalue="JUnit.testDB.getGuide" />
       </list>
     </recent_temporary>
   </component>
