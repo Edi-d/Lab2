@@ -5,12 +5,14 @@ abstract public class User implements Identifiable{
     private String lastName;
     private int age;
     private String email;
+    private String password;
 
-    public User(int Id, String firstName, String lastName, int age, String email) {
+    public User(int Id, String firstName, String lastName, int age, String email, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.email=email;
+        this.password=password;
     }
 
     public String getFirstName() {
@@ -41,5 +43,13 @@ abstract public class User implements Identifiable{
     }
     public void setEmail(String email){
         this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

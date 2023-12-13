@@ -26,4 +26,10 @@ public class GuideRepo {
         return crudRepository.getFromDatabase(db, query, id);
     }
 
+    public List<Object[]> getGuideByEmail(Connection db, String email) throws SQLException {
+        String query = "SELECT * FROM public.Guide WHERE email = ?";
+
+        return crudRepository.getFromDatabase(db, query, email);
+    }
+
 }
