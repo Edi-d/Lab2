@@ -17,7 +17,7 @@ public class AuthenticatorProxy implements Authenticator {
     }
 
     @Override
-    public void authenticate(String email, String password) {
+    public boolean authenticate(String email, String password) {
         try {
             Connection db = dbConnection.connect();
             Repo guideRepo = new Repo();
@@ -30,11 +30,12 @@ public class AuthenticatorProxy implements Authenticator {
                 realAuthenticator.authenticate(email, password);
 
             } else {
-                System.out.println("Access denied. Incorrect user or password ");
+                return false;
             }
         } catch (SQLException e) {
-            System.err.println("Error: Guide not found in User database. Details: " + e.getMessage());
+            return false;
         }
+        return true;
     }
 }
 
