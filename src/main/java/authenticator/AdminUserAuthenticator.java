@@ -4,9 +4,7 @@ package authenticator;
 import java.util.HashMap;
 import java.util.Map;
 
-import authenticator.AuthenticatorProxy;
-
-public class AdminUserAuthenticator {
+public class AdminUserAuthenticator implements Authenticator {
     private final Map<String, String> userDatabase;
 
     public AdminUserAuthenticator() {
@@ -16,8 +14,12 @@ public class AdminUserAuthenticator {
         userDatabase.put("tavi@gmail.com", "pass123");
     }
 
+    @Override
     public boolean authenticate(String username, String password) {
-        System.out.println("user...");
-        return (userDatabase.containsKey(username) && userDatabase.get(username).equals(password));
+        if (userDatabase.containsKey(username) && userDatabase.get(username).equals(password)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
