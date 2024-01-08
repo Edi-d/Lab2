@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2d2096e-1618-4231-acfa-7e22e282eb16" name="Changes" comment="Database Repository">
-      <change afterPath="$PROJECT_DIR$/src/tests/SpringBootTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Observer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Observer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/authenticator/AdminUserAuthenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/authenticator/AdminUserAuthenticator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/authenticator/AuthenticatorProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/authenticator/AuthenticatorProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Observer.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SpringController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SpringController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/Tests2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Tests2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/TourControllertest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/TourControllertest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/testAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/testAuth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/testDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/testDB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +90,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestingWebApplicationTest">
+  <component name="RunManager" selected="Spring Boot.Main">
     <configuration name="HttpRequestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MAP-Lab2" />
       <extension name="coverage">
@@ -184,7 +176,7 @@
       <workItem from="1701095214775" duration="23833000" />
       <workItem from="1702464110606" duration="1827000" />
       <workItem from="1702473801220" duration="7088000" />
-      <workItem from="1702920899000" duration="11086000" />
+      <workItem from="1702920899000" duration="15079000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation">
       <option name="closed" value="true" />
