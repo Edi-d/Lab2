@@ -18,6 +18,7 @@ public class AuthenticatorProxy implements Authenticator {
 
     @Override
     public boolean authenticate(String email, String password) {
+        System.out.println("Proxy: Checking if user is an admin");
         try {
             Connection db = dbConnection.connect();
             Repo guideRepo = new Repo();
@@ -31,7 +32,6 @@ public class AuthenticatorProxy implements Authenticator {
                     return false;
                 }
                 realAuthenticator.authenticate(email, password);
-
             } else {
                 return false;
             }

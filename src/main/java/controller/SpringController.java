@@ -3,6 +3,7 @@ package controller;
 import authenticator.AdminUserAuthenticator;
 import authenticator.Authenticator;
 import authenticator.AuthenticatorProxy;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 public class SpringController {
 
     @PostMapping("/login")
-    public String login(@RequestBody LoginRequest loginRequest) {
+    public ResponseEntity<String> login(@RequestBody LoginRequest loginRequest) {
         String email = loginRequest.getEmail();
         String password = loginRequest.getPassword();
 
@@ -18,12 +19,10 @@ public class SpringController {
         Authenticator authenticatorProxy = new AuthenticatorProxy(adminAuthenticator);
 
         if (authenticatorProxy.authenticate(email, password)) {
-            return "Login successful!";
+            return ResponseEntity.ok("Login successful!");
+        } else {
+            return ResponseEntity.status(401).body("Login failed. Invalid credentials");
         }
-        else{
-            return "Login failed. Invalid credentials";
-        }
-
     }
 
 }

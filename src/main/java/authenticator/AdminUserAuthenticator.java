@@ -16,6 +16,7 @@ public class AdminUserAuthenticator implements Authenticator {
 
     @Override
     public boolean authenticate(String username, String password) {
+        System.out.println("intern");
         if (userDatabase.containsKey(username) && userDatabase.get(username).equals(password)) {
             return true;
         } else {
